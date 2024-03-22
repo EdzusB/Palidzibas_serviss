@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 using Palidzibas_servissML.Model;
 
@@ -12,30 +11,39 @@ namespace Palidzibas_serviss
             InitializeComponent();
         }
 
+        // Notikuma apstrāde pogai "button1" noklikšķinot
         private void button1_Click(object sender, EventArgs e)
         {
+            // Izveido jaunu modeļa ievades objektu
             var input = new ModelInput();
+            // Iestatq ievades vērtību no teksta lauka "zina"
             input.Col0 = zina.Text;
 
+            // Izdara modeļa prognozi, izmantojot ievadi
             ModelOutput prediction = ConsumeModel.Predict(input);
 
+            // Atrastās kategorijas noteikšana
             int maxIndex = 0;
             float maxProbability = prediction.Score[0];
 
+            // Atrastās kategorijas noteikšana, kas atbilst vislielākajai varbūtībai
             for (int i = 1; i < prediction.Score.Length; i++)
             {
                 if (prediction.Score[i] > maxProbability)
                 {
                     maxProbability = prediction.Score[i];
-                    maxIndex = i+1;
+                    maxIndex = i + 1; // Pievienojam 1, jo kategorijas indeksi sākas no 1
                 }
             }
 
-            string predictedCategory = $"Category {maxIndex}";
+            // Sagatavo ziņojumu par prognozēto kategoriju
+            string predictedCategory = $"Kategorija {maxIndex}";
 
+            // Izvada informāciju par prognozēto kategoriju un tās varbūtībām uz konsoli
             Console.WriteLine("MaxIndex: " + maxIndex);
             Console.WriteLine("Prediction Scores: " + string.Join(", ", prediction.Score));
 
+            // Parāda atbilstošu ziņojumu, atkarībā no prognozētās kategorijas
             if (maxIndex == 0)
             {
                 MessageBox.Show("Jūsu ziņa nosūtīta IT nozarei!");
@@ -56,41 +64,6 @@ namespace Palidzibas_serviss
             {
                 MessageBox.Show("Jūsu ziņa nosūtīta Mārketinga nozarei!");
             }
-
-            private Label messageLabel;
-        private Button okButton;
-
-        public CustomMessageBoxForm(string message)
-        {
-            InitializeComponent();
-            this.messageLabel.Text = message;
-        }
-
-        private void InitializeComponent()
-        {
-            this.Size = new Size(300, 150);
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-
-            this.messageLabel = new Label();
-            this.messageLabel.Dock = DockStyle.Fill;
-            this.messageLabel.TextAlign = ContentAlignment.MiddleCenter;
-
-            this.okButton = new Button();
-            this.okButton.Text = "OK";
-            this.okButton.Dock = DockStyle.Bottom;
-            this.okButton.Click += (sender, e) => this.Close();
-
-            this.Controls.Add(this.messageLabel);
-            this.Controls.Add(this.okButton);
-        }
-
-        public static void Show(string message)
-        {
-            CustomMessageBoxForm customMessageBox = new CustomMessageBoxForm(message);
-            customMessageBox.ShowDialog();
         }
     }
 }

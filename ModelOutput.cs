@@ -5,8 +5,10 @@ using Microsoft.ML.Data;
 
 namespace Palidzibas_servissML.Model
 {
+    // Klase, kas apraksta modeïa izvadi
     public class ModelOutput
     {
+        // Masîvs, kas satur rezultâtus jeb varbûtîbas katrâ no kategorijâm
         public float[] Score { get; set; }
     }
 }

@@ -9,24 +9,27 @@ using Palidzibas_servissML.Model;
 
 namespace Palidzibas_servissML.Model
 {
+    // Klase, kas apraksta modeïa patçriòu
     public class ConsumeModel
     {
+        // Statiskais objekts, kas uzglabâslçgtu prognozçðanas dzinçju
         private static Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictionEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(CreatePredictionEngine);
 
-        // For more info on consuming ML.NET models, visit https://aka.ms/mlnet-consume
-        // Method for consuming model in your app
+        // Metode, lai patçrçtu modeli jûsu lietotnç
         public static ModelOutput Predict(ModelInput input)
         {
+            // Veic prognozi, izmantojot sagatavoto prognozçðanas dzinçju
             ModelOutput result = PredictionEngine.Value.Predict(input);
             return result;
         }
 
+        // Metode, kas veido prognozçðanas dzinçju
         public static PredictionEngine<ModelInput, ModelOutput> CreatePredictionEngine()
         {
-            // Create new MLContext
+            // Izveido jaunu ML kontekstu
             MLContext mlContext = new MLContext();
 
-            // Load model & create prediction engine
+            // Ielâdç modeli un izveido prognozçðanas dzinçju
             string modelPath = @"C:\Users\Lietotajs\AppData\Local\Temp\MLVSTools\Palidzibas_servissML\Palidzibas_servissML.Model\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
@@ -35,3 +38,4 @@ namespace Palidzibas_servissML.Model
         }
     }
 }
+

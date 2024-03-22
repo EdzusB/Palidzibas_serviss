@@ -4,15 +4,15 @@ using Microsoft.ML.Data;
 
 namespace Palidzibas_servissML.Model
 {
+    // Klase, kas apraksta modeïa ievadi
     public class ModelInput
     {
+        // Ievades kolonna "col0"
         [ColumnName("col0"), LoadColumn(0)]
         public string Col0 { get; set; }
 
-
+        // Ievades kolonna "col1"
         [ColumnName("col1"), LoadColumn(1)]
         public string Col1 { get; set; }
-
-
     }
 }
