@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Palidzibas_servissML.Model;
 
 namespace Palidzibas_serviss
 {
@@ -15,6 +16,11 @@ namespace Palidzibas_serviss
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

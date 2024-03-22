@@ -1,0 +1,222 @@
+Pakalpojuma traucējumu paziņojums	1
+Aizkavēta servera uzlabošana	1
+Tīkla savienojamības problēma	1
+Programmatūras instalācijas problēma	1
+Datubāzes veiktspējas problēma	1
+Sistēmas pieteikšanās problēma	1
+Pieteikumu kļūdu paziņojums	1
+Servera uzturēšanas brīdinājums	1
+Programmatūras ieviešanas paziņojums	1
+Programmatūras atjaunošanas pieprasījums	1
+Tīkla drošības brīdinājums	1
+Datu dublēšanas apstiprinājums	1
+Aparatūras darbības traucējumu ziņojums	1
+VPN piekļuves pieprasījums	1
+Paroles atiestatīšanas pieprasījums	1
+Programmatūras licences atjauninājums	1
+IT apmācības sesijas grafiks	1
+Attālās piekļuves problēmu novēršana	1
+Steidzama servera restarta paziņojums	1
+Kritiskais sistēmas atjauninājuma brīdinājums	1
+Aizkavēta programmatūras izvietošana	1
+Aparatūras uzlabošanas paziņojums	1
+Drošības pārkāpuma izmeklēšana	1
+Sistēmas veiktspējas analīze	1
+Programmatūras uzstādīšanas grafiks	1
+Ugunsmūra konfigurācijas atjaunināšana	1
+IT politikas apstiprinājums	1
+VPN konfigurācijas palīdzība	1
+Programmatūras licences revīzijas paziņojums	1
+Datu šifrēšanas politikas atjauninājums	1
+Tīkla joslas platuma optimizācija	1
+Servera telpas temperatūras brīdinājums	1
+Drošības ievainojamības ziņojums	1
+Paroles politikas atjauninājums	1
+Programmatūras atjaunināšanas vadlīniju vadlīnijas	1
+Antivīrusa programmatūras atjaunināšanas paziņojums	1
+Jaunā darbinieka IT iestatīšanas pieprasījums	1
+E-pasta servera uzturēšanas brīdinājums	1
+IT aprīkojuma likvidācijas pieprasījums	1
+IT aktīvu inventarizācijas atjaunināšana	1
+Tīkla infrastruktūras uzlabošanas paziņojums	1
+Programmatūras saderības pārbaude	1
+Printera uzstādīšanas palīdzības pieprasījums	1
+Bezvadu tīkla uzstādīšanas pieprasījums	1
+E-pasta filtra konfigurācijas atjaunināšana	1
+IT sistēmas audita paziņojums	1
+Programmatūras iegādes pieprasījums	1
+IT budžeta pārskatīšanas sapulces ielūgums	1
+Servera darbības traucējumu paziņojums	1
+Mākoņu krātuves piešķiršanas pieprasījums	1
+IT drošības apzināšanas apmācības grafiks	1
+Rēķina maksājuma atgādinājums	2
+Izdevumu pārskatu iesniegšanas termiņš	2
+Budžeta apstiprināšanas pieprasījums	2
+Piegādātāja maksājuma apstiprinājums	2
+Finanšu pārskata kvartālā atjaunināšana	2
+Iepirkuma pasūtījuma apstiprinājuma pieprasījums	2
+Ceļojuma izdevumu atlīdzināšanas pieprasījums	2
+Nodokļu saskaņošanas paziņojums	2
+Parādu piedziņas sekošana	2
+Auditēšanas sagatavošanas tikšanās grafiks	2
+Darba samaksas korekcijas paziņojums	2
+Izdevumu politikas skaidrojums	2
+Budžeta piešķiršanas pārskatīšanas sapulces ielūgums	2
+Kredītkartes darījuma strīda atrisinājums	2
+Rēķina nesaskaņotības pārbaude	2
+Finanšu prognozēšanas tikšanās dienas kārtība	2
+Izdevumu samazināšanas iniciatīvas atjauninājums	2
+Bankas konta izrakstu saskaņošana	2
+Finanšu plānošanas programmatūras demonstrācijas pieprasījums	2
+Aplikāciju apstrādes kavēšanas paziņojums	2
+Investīciju portfeļa veiktspējas pārskats	2
+Izdevumu analīzes prezentācijas sagatavošana	2
+Pieprasījums par nelielu skaidras naudas papildinājumu	2
+Nodokļu atlaižu sertifikāta izdošana	2
+Peļņas maržas analīzes prezentācija	2
+Kapitāla izdevumu apstiprināšanas pieprasījums	2
+Finanšu politikas grozījumu priekšlikums	2
+Piegādātāja līguma pagarināšanas sarunu veikšana	2
+Darbinieka labuma pieteikšanas atgādinājums	2
+Finanšu risku novērtēšanas pārskats	2
+Apdrošināšanas seguma atjaunināšanas apstiprinājums	2
+Auditēšanas atklājumu risinājuma plāns	2
+Finanšu atbilstības apmācības paziņojums	2
+Piegādātāju maksājuma nosacījumu sarunu veikšana	2
+Ieņēmumu atpazīšanas korekcijas paziņojums	2
+Izdevumu apstiprināšanas darbplūsmas modificēšanas pieprasījums	2
+Klienta kredītlīmeņa palielināšanas pieprasījums	2
+Gada budžeta pārskatīšanas sapulces dienas kārtība	2
+Nodokļu atmaksas statusa pārbaude	2
+Parāda piedziņas atgādinājums	2
+Aktīvu nolietojuma aprēķina atjauninājums	2
+Finanšu pārskatu precizitātes verifikācija	2
+Sarbanes-Oxley likuma atbilstības auditu paziņojums	2
+Ieņēmumu pieauguma prognozēšanas prezentācija	2
+Jaunā potenciālā klienta sekotne          	3
+Atbilde uz produktu vaicājumu              	3
+Demonstrācijas pieprasījuma apstiprinājums 	3
+Cenu piedāvājuma sagatavošana             	3
+Pārdošanas tikšanās ielūgums               	3
+Cenu sarunu sekotne                        	3
+Klientu atsauksmes pieprasījums            	3
+Pasūtījuma apstiprinājums                  	3
+Potenciālo klientu ģenerēšana              	3
+Pārdošanas apmācības darbnīcas ielūgums   	3
+Līguma atjaunināšanas atgādinājums         	3
+Piedāvājuma iesniegšanas apstiprinājums    	3
+Atlaides piedāvājuma paziņojums           	3
+Pārdošanas prezentācijas sagatavošana      	3
+Klientu apmierinātības aptauja             	3
+Potenciālo klientu analīzes pārskats       	3
+Pārdošanas prognozēšanas atjauninājums     	3
+Krustpārdošanas iespēju paziņojums        	3
+Pārdošanas teritorijas paplašināšanas priekšlikums 	3
+Ieteikumu programmas paziņojums            	3
+Pārdošanas mērķa sasniegumu svinības       	3
+Konkurentu analīzes atjauninājums          	3
+Dalības izstādē apstiprinājums             	3
+Klientu ieviešanas procesa pārskats        	3
+Papildpārdošanas kampaņas sākuma paziņojums 	3
+Pārdošanas veiktspējas pārskata tikšanās ielūgums 	3
+Klientu saglabāšanas stratēģijas diskusija 	3
+Pārdošanas caurules vadības apmācības grafiks 	3
+Atsauksmju ieviešanas plāns                	3
+Konta pārvaldības stratēģijas pārskats     	3
+Pārdošanas procesa optimizācijas priekšlikums 	3
+Pārdošanas veicināšanas paziņojums        	3
+Klientu attiecību pārvaldības atjauninājums 	3
+Pārdošanas mērvienību paneļa ieviešanas paziņojums 	3
+Pārdošanas stratēģijas saskaņošanas tikšanās dienas kārtība 	3
+Pārdošanas materiālu atjaunināšana         	3
+Pārdošanas interešu novērtēšanas metodoloģijas ieviešana 	3
+Pārdošanas automatizācijas programmatūras demonstrācijas pieprasījums 	3
+Pārdošanas stimulu programmas paziņojums  	3
+Pārdošanas zvana skripta pārskatīšana      	3
+Pārdošanas kanāla partnerattiecību priekšlikums 	3
+Klientu piesaistes kampaņas plānošana     	3
+Pārdošanas iespēju nodrošināšanas apmācības programmas grafiks 	3
+Pārdošanas veiksmes stimulu brauciena paziņojums 	3
+Laipni lūdzam komandā!                       	4
+Jaunā darbinieka orientācijas grafiks       	4
+Atgādinājums par labumu reģistrāciju        	4
+Atgādinājums par veiktspējas pārskatiem    	4
+Darbinieku rokasgrāmatas atjauninājums     	4
+Atvaļinājuma pieprasījuma apstiprinājums  	4
+Apmācības sesijas reģistrācijas apstiprinājums 	4
+Veselības un drošības apmācību paziņojums 	4
+Politikas apstiprinājuma formas iesniegšanas atgādinājums 	4
+Darbinieku apmierinātības aptauja          	4
+Darbinieku atsauksmju programmas paziņojums 	4
+Vakances paziņojums                         	4
+Izstāšanās intervijas laika noteikšana     	4
+Algu izmaiņu paziņojums                     	4
+Diskusija par veiktspējas uzlabošanas plānu 	4
+Darbinieku atzinības programmas paziņojums 	4
+Uzņēmuma kultūras aptauja                  	4
+Konfliktu risināšanas apmācību grafiks     	4
+Darbinieku palīdzības programmas atgādinājums 	4
+Politikas pārkāpuma brīdinājums            	4
+Darbinieku sūdzību risināšanas atjauninājums 	4
+Attālinātā darba politikas atjauninājums   	4
+Grūtniecības / tēva atvaļinājuma pieprasījuma process 	4
+Pensiju plānošanas semināra ielūgums       	4
+Pakļautā darba laika atgādinājums          	4
+Jauna darbinieka fona pārbaudes pabeigšana 	4
+Uzņēmuma pasākuma RSVP atgādinājums       	4
+Darbavietas uzmākšanās novēršanas apmācību grafiks 	4
+Gada veiktspējas novērtēšanas grafiks     	4
+Veselības programmas reģistrācijas atgādinājums 	4
+Komandu veidojoša pasākuma paziņojums     	4
+Pakāpju paziņojums                         	4
+Mēneša darbinieka atzinības izteikšana     	4
+Prakses programmas pieteikšanās termiņš    	4
+Profesionālās attīstības darbnīcu reģistrācija 	4
+Darbinieku labumu tirdzniecības taisījuma ielūgums 	4
+Darba piedāvājuma vēstuļu izplatīšana     	4
+Līdztiesības nodrošināšanas apmācības      	4
+Ārkārtas evakuācijas vingrinājuma paziņojums 	4
+Elastīgo tēriņu konta reģistrācijas termiņš 	4
+Uzņemšanas atsauksmju pieprasījums         	4
+Darbinieku rokasgrāmatas pārskata sesiju grafiks 	4
+Jauna produkta iznākuma paziņojums          	5
+Sociālo tīklu kampaņas atjauninājums        	5
+E-pasta biļtena dizaina apstiprinājums       	5
+Mārketinga stratēģijas tikšanās dienas kārtība 	5
+Satura kalendāra atjauninājums               	5
+Mājaslapas pārprojektēšanas progresu ziņojums 	5
+Reklāmas kampaņas veiktspējas analīze      	5
+Zīmola identitātes vadlīniju pārskatīšana   	5
+Tirgus pētījumu aptaujas ielūgums           	5
+Video producēšanas grafika pielāgošana      	5
+Potenciālo klientu ģenerēšanas kampaņas novērtējums 	5
+Sabiedrisko attiecību izplānošanas plāns    	5
+Klientu atsauksmju vākšanas pieprasījums    	5
+Ietekmētāja sadarbības priekšlikums        	5
+SEO optimizācijas ieteikumu izskatīšana     	5
+Grafikas dizaina projekta izklāsts          	5
+Pasākuma sponsorēšanas priekšlikums         	5
+Kopīgošanas darbnīcas reģistrācija         	5
+Mārketinga budžeta pārskata tikšanās ielūgums 	5
+Produkta demonstrācijas video izlaišanas paziņojums 	5
+Satura mārketinga mērķu panelis atjauninājums 	5
+Partnerattiecību iespēju izpēte           	5
+Klientu iesaistīšanas stratēģijas diskusija 	5
+Tirdzniecības izstādes stenda apstiprinājums 	5
+E-pasta mārketinga automatizācijas ieviešana 	5
+Digitālo reklāmu kreatīvo testēšanas rezultāti 	5
+Sociālo tīklu ietekmētāju sadarbības apstiprinājums 	5
+Tirgus segmentācijas analīzes pārskats     	5
+Mārketinga analītikas instrumentu apmācības sesija 	5
+Reklāmas materiālu izvēles atjauninājums   	5
+Klientu lojalitātes programmas iznākuma paziņojums 	5
+Zīmola darbnīcas RSVP atgādinājums        	5
+Mārketinga kampaņas veiktspējas pārskats    	5
+Satura lokalizācijas stratēģijas diskusija  	5
+Video mārketinga stratēģijas smadzeņu bumbu sesija 	5
+Mājaslapas apmeklētības pieauguma analīze   	5
+Virtuālā pasākuma plānošanas kontroles saraksts 	5
+Mārketinga materiālu drukas statusa atjauninājums 	5
+Ieteikumu programmas stimuli maiņas paziņojums 	5
+Interaktīvas vebināra reģistrācijas apstiprinājums 	5
+E-pasta mārketinga A/B testēšanas plāna apstiprinājums 	5

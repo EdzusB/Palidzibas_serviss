@@ -29,13 +29,45 @@ namespace Palidzibas_serviss
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.nosutit = new System.Windows.Forms.Button();
+            this.zina = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // nosutit
+            // 
+            this.nosutit.Location = new System.Drawing.Point(359, 234);
+            this.nosutit.Name = "nosutit";
+            this.nosutit.Size = new System.Drawing.Size(75, 23);
+            this.nosutit.TabIndex = 0;
+            this.nosutit.Text = "Nosūtīt";
+            this.nosutit.UseVisualStyleBackColor = true;
+            this.nosutit.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // zina
+            // 
+            this.zina.Location = new System.Drawing.Point(344, 149);
+            this.zina.Name = "zina";
+            this.zina.Size = new System.Drawing.Size(100, 22);
+            this.zina.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.zina);
+            this.Controls.Add(this.nosutit);
+            this.Name = "Form1";
+            this.Text = "Klientu apkalpošana";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button nosutit;
+        private System.Windows.Forms.TextBox zina;
     }
 }
 
