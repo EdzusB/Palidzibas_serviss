@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Palidzibas_servissML.Model;
 
@@ -21,11 +15,10 @@ namespace Palidzibas_serviss
         private void button1_Click(object sender, EventArgs e)
         {
             var input = new ModelInput();
-            input.Col0 = zina.Text; // Assuming 'zina' is a TextBox control where the user inputs data
+            input.Col0 = zina.Text;
 
             ModelOutput prediction = ConsumeModel.Predict(input);
 
-            // Find the index of the maximum probability in the prediction array
             int maxIndex = 0;
             float maxProbability = prediction.Score[0];
 
@@ -38,8 +31,7 @@ namespace Palidzibas_serviss
                 }
             }
 
-            // Assuming maxIndex corresponds to the category label
-            string predictedCategory = $"Category {maxIndex}"; // Adjust according to your category labels
+            string predictedCategory = $"Category {maxIndex}";
 
             Console.WriteLine("MaxIndex: " + maxIndex);
             Console.WriteLine("Prediction Scores: " + string.Join(", ", prediction.Score));
@@ -65,7 +57,40 @@ namespace Palidzibas_serviss
                 MessageBox.Show("Jūsu ziņa nosūtīta Mārketinga nozarei!");
             }
 
-            //cena.Text = predictedCategory; // Display the predicted category label
+            private Label messageLabel;
+        private Button okButton;
+
+        public CustomMessageBoxForm(string message)
+        {
+            InitializeComponent();
+            this.messageLabel.Text = message;
+        }
+
+        private void InitializeComponent()
+        {
+            this.Size = new Size(300, 150);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            this.messageLabel = new Label();
+            this.messageLabel.Dock = DockStyle.Fill;
+            this.messageLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            this.okButton = new Button();
+            this.okButton.Text = "OK";
+            this.okButton.Dock = DockStyle.Bottom;
+            this.okButton.Click += (sender, e) => this.Close();
+
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.okButton);
+        }
+
+        public static void Show(string message)
+        {
+            CustomMessageBoxForm customMessageBox = new CustomMessageBoxForm(message);
+            customMessageBox.ShowDialog();
         }
     }
 }

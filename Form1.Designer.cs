@@ -31,14 +31,18 @@ namespace Palidzibas_serviss
         {
             this.nosutit = new System.Windows.Forms.Button();
             this.zina = new System.Windows.Forms.TextBox();
-            this.cena = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nosutit
             // 
-            this.nosutit.Location = new System.Drawing.Point(359, 234);
+            this.nosutit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nosutit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.nosutit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(239)))), ((int)(((byte)(209)))));
+            this.nosutit.Location = new System.Drawing.Point(315, 305);
             this.nosutit.Name = "nosutit";
-            this.nosutit.Size = new System.Drawing.Size(75, 23);
+            this.nosutit.Size = new System.Drawing.Size(143, 70);
             this.nosutit.TabIndex = 0;
             this.nosutit.Text = "Nosūtīt";
             this.nosutit.UseVisualStyleBackColor = true;
@@ -46,26 +50,47 @@ namespace Palidzibas_serviss
             // 
             // zina
             // 
-            this.zina.Location = new System.Drawing.Point(344, 149);
+            this.zina.BackColor = System.Drawing.Color.White;
+            this.zina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.zina.Location = new System.Drawing.Point(393, 202);
             this.zina.Name = "zina";
-            this.zina.Size = new System.Drawing.Size(100, 22);
+            this.zina.Size = new System.Drawing.Size(375, 22);
             this.zina.TabIndex = 1;
             // 
-            // cena
+            // label1
             // 
-            this.cena.Location = new System.Drawing.Point(536, 188);
-            this.cena.Name = "cena";
-            this.cena.Size = new System.Drawing.Size(197, 22);
-            this.cena.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(239)))), ((int)(((byte)(209)))));
+            this.label1.Location = new System.Drawing.Point(40, 204);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Jūsu problēma vai informācija...";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(239)))), ((int)(((byte)(209)))));
+            this.label2.Location = new System.Drawing.Point(194, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(394, 41);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Informācijas centrs";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cena);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.zina);
             this.Controls.Add(this.nosutit);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(90)))), ((int)(((byte)(37)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Klientu apkalpošana";
             this.ResumeLayout(false);
@@ -77,7 +102,8 @@ namespace Palidzibas_serviss
 
         private System.Windows.Forms.Button nosutit;
         private System.Windows.Forms.TextBox zina;
-        private System.Windows.Forms.TextBox cena;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
