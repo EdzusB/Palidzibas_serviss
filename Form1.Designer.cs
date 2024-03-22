@@ -31,6 +31,7 @@ namespace Palidzibas_serviss
         {
             this.nosutit = new System.Windows.Forms.Button();
             this.zina = new System.Windows.Forms.TextBox();
+            this.cena = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // nosutit
@@ -50,11 +51,19 @@ namespace Palidzibas_serviss
             this.zina.Size = new System.Drawing.Size(100, 22);
             this.zina.TabIndex = 1;
             // 
+            // cena
+            // 
+            this.cena.Location = new System.Drawing.Point(536, 188);
+            this.cena.Name = "cena";
+            this.cena.Size = new System.Drawing.Size(197, 22);
+            this.cena.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cena);
             this.Controls.Add(this.zina);
             this.Controls.Add(this.nosutit);
             this.Name = "Form1";
@@ -68,6 +77,7 @@ namespace Palidzibas_serviss
 
         private System.Windows.Forms.Button nosutit;
         private System.Windows.Forms.TextBox zina;
+        private System.Windows.Forms.TextBox cena;
     }
 }
 
