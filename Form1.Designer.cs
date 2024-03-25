@@ -75,7 +75,7 @@ namespace Palidzibas_serviss
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(239)))), ((int)(((byte)(209)))));
             this.label2.Location = new System.Drawing.Point(194, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(394, 41);
+            this.label2.Size = new System.Drawing.Size(381, 40);
             this.label2.TabIndex = 3;
             this.label2.Text = "Informācijas centrs";
             // 
@@ -84,7 +84,7 @@ namespace Palidzibas_serviss
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(802, 453);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.zina);

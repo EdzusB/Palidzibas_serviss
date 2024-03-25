@@ -12,7 +12,7 @@ namespace Palidzibas_servissML.Model
     // Klase, kas apraksta modeïa patçriòu
     public class ConsumeModel
     {
-        // Statiskais objekts, kas uzglabâslçgtu prognozçðanas dzinçju
+        // Statiskais objekts, kas uzglabâ slçgtu prognozçðanas dzinçju
         private static Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictionEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(CreatePredictionEngine);
 
         // Metode, lai patçrçtu modeli jûsu lietotnç
