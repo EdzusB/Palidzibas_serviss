@@ -1,0 +1,10 @@
+Z:\Palidzibas_servissML.Model\bin\Debug\netstandard2.0\MLModel.zip
+Z:\Palidzibas_servissML.Model\bin\Debug\netstandard2.0\Palidzibas_servissML.Model.deps.json
+Z:\Palidzibas_servissML.Model\bin\Debug\netstandard2.0\Palidzibas_servissML.Model.dll
+Z:\Palidzibas_servissML.Model\bin\Debug\netstandard2.0\Palidzibas_servissML.Model.pdb
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.csprojAssemblyReference.cache
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.AssemblyInfoInputs.cache
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.AssemblyInfo.cs
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.csproj.CoreCompileInputs.cache
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.dll
+Z:\Palidzibas_servissML.Model\obj\Debug\netstandard2.0\Palidzibas_servissML.Model.pdb

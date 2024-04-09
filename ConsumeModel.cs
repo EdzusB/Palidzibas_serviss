@@ -30,7 +30,7 @@ namespace Palidzibas_servissML.Model
             MLContext mlContext = new MLContext();
 
             // Ielâdç modeli un izveido prognozçðanas dzinçju
-            string modelPath = @"C:\Users\Lietotajs\AppData\Local\Temp\MLVSTools\Palidzibas_servissML\Palidzibas_servissML.Model\MLModel.zip";
+            string modelPath = @"Z:\Palidzibas_serviss\Palidzibas_servissML.Model\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
