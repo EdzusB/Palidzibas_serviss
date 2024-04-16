@@ -24,6 +24,21 @@ namespace Palidzibas_serviss
 
         }
 
+        static SQLiteConnection CreateConnection() //Konekcija ar datubāzi
+        {
+            SQLiteConnection sqlite_conn;
+            sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version = 3; New = True; Compress = True; ");
+            try
+            {
+                sqlite_conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Konekcija neizdevās!");
+            }
+            return sqlite_conn;
+        }
+
         private List<string> GetListOfUsernamesFromDatabase() //Funkcija, kas iegūst visus lietotājvārdus no datubāzes
         {
             List<string> usernameList = new List<string>(); //Ievieš jaunu mainīgo
@@ -101,21 +116,56 @@ namespace Palidzibas_serviss
 
         private void pieteikties_Click(object sender, EventArgs e)
         {
-            List<string> usernames = GetListOfUsernamesFromDatabase(); //Izsauc funkciju, kas ielasīja lietotājvārdus sarakstā
-            List<string> hashedPasswords = GetListOfHashedPasswordsFromDatabase(); //Izsauc funkciju, kas ielasīja paroles sarakstā
+            int datu_id = 0; // Initialize datu_id
 
-            string searchTextUsername = Lietotajvards.Text; //Iegūst tekstu no TextBox
-            string searchTextPassword = CalculateMD5Hash(Parole.Text); // Šifrē paroli un tad to iegūst no TextBox
+            // Retrieve usernames and hashed passwords from the database
+            List<string> usernames = GetListOfUsernamesFromDatabase();
+            List<string> hashedPasswords = GetListOfHashedPasswordsFromDatabase();
 
-            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword)) //Pārbauda vai lietotājvārds sakrīt ar attiecīgo paroli
+            string searchTextUsername = Lietotajvards.Text; // Get the text from TextBox for username
+            string searchTextPassword = CalculateMD5Hash(Parole.Text); // Hash the password from TextBox
+
+            // Check if the entered username and password are valid
+            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword))
             {
-                Form1 f1 = new Form1(); //Ievieš jaunu mainīgo
-                f1.Show(); //Pāiet uz Form4
-                this.Hide();
+                try
+                {
+                    using (SQLiteConnection sqlite_conn = CreateConnection())
+                    {
+                        using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                        {
+                            sqlite_cmd.CommandText = @"
+                        SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
+                            sqlite_cmd.Parameters.AddWithValue("@lietotajvards", searchTextUsername);
+
+                            // Execute the query to retrieve the Datu_ID
+                            object result = sqlite_cmd.ExecuteScalar();
+
+                            if (result != null && result != DBNull.Value)
+                            {
+                                datu_id = Convert.ToInt32(result); // Update datu_id with retrieved ID
+                                MessageBox.Show($"User found with ID: {datu_id}");
+
+                                // Pass the datu_id value to Form1
+                                Form1 f1 = new Form1(datu_id);
+                                f1.Show(); // Show Form1
+                                this.Hide(); // Hide current Form3
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error: User not found.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
             }
             else
             {
-                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!"); //Izvada paziņojumu, ja lietotājvārds un/vai parole nesakrīt ar sarakstā esošajiem
+                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!");
             }
         }
     }

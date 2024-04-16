@@ -99,7 +99,7 @@ namespace Palidzibas_serviss
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
-                    MessageBox.Show("Kļūda, datu ievietošana neizdevās!");
+                    MessageBox.Show("Šāds lietotājvārds un/vai parole jau eksistē!!!");
                 }
             }
             else
@@ -107,12 +107,46 @@ namespace Palidzibas_serviss
                 MessageBox.Show("Lūdzu aizpildiet visus ievades laukus!");
             }
 
-            // Show Form1 and hide Form2 after registration
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
-        }
 
+        }
+        private void talak_Click(object sender, EventArgs e)
+        {
+            string inputUsername = lietotajvards.Text; // Get username text from TextBox
+
+            try
+            {
+                using (SQLiteConnection sqlite_conn = CreateConnection())
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    // Use parameterized query to retrieve Datu_ID based on username
+                    sqlite_cmd.CommandText = @"
+                SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
+                    sqlite_cmd.Parameters.AddWithValue("@lietotajvards", inputUsername);
+
+                    // Execute the query to retrieve the Datu_ID
+                    object result = sqlite_cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        int datu_id = Convert.ToInt32(result);
+                        MessageBox.Show($"Lietotājs atrasts ar ID: {datu_id}");
+
+                        // Show Form1 with the retrieved datu_id
+                        Form1 f1 = new Form1(datu_id); // Pass the datu_id to Form1 constructor
+                        f1.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Kļūda: Lietotājs nav atrasts.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Kļūda: {ex.Message}");
+            }
+        }
     }
     class registresana //Izveido klasi ar mainīgajiem
     {
@@ -124,3 +158,4 @@ namespace Palidzibas_serviss
         public string parole { get; set; }
     }
 }
+

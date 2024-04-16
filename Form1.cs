@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Data.SQLite;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 using Palidzibas_servissML.Model;
 
@@ -6,76 +9,101 @@ namespace Palidzibas_serviss
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private int receivedValue; // Store received value (e.g., datu_id)
+
+        public Form1(int datu_id) // Constructor to receive an initial value
         {
-            InitializeComponent();
+            InitializeComponent(); // Initialize form components
+            this.receivedValue = datu_id; // Set received value to the class field
         }
 
-        // Notikuma apstrāde pogai "button1" noklikšķinot
+        private SQLiteConnection CreateConnection()
+        {
+            SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;");
+            try
+            {
+                sqlite_conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Konekcijas kļūda: {ex.Message}");
+            }
+            return sqlite_conn;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            datu_nosutisana();
-        }
-        private void datu_nosutisana()
-        {
-            // Izveido jaunu modeļa ievades objektu
-            var input = new ModelInput();
-            // Iestatq ievades vērtību no teksta lauka "zina"
-            if (zina.Text == "")
+            string teksts = zina.Text;
+
+            if (string.IsNullOrEmpty(teksts))
             {
                 MessageBox.Show("Lūdzu aizpildiet lauku!");
+                return;
             }
-            else
+
+            // Insert data into the Zina table
+            try
             {
-                input.Col0 = zina.Text;
-
-
-
-                // Izdara modeļa prognozi, izmantojot ievadi
-                ModelOutput prediction = ConsumeModel.Predict(input);
-
-                // Atrastās kategorijas noteikšana
-                int maxIndex = 0;
-                float maxProbability = prediction.Score[0];
-
-                // Atrastās kategorijas noteikšana, kas atbilst vislielākajai varbūtībai
-                for (int i = 1; i < prediction.Score.Length; i++)
+                using (SQLiteConnection sqlite_conn = CreateConnection())
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                 {
-                    if (prediction.Score[i] > maxProbability)
-                    {
-                        maxProbability = prediction.Score[i];
-                        maxIndex = i + 1; // Pievienojam 1, jo kategorijas indeksi sākas no 1
-                    }
-                }
+                    sqlite_cmd.CommandText = @"
+                        INSERT INTO Zina (Teksts)
+                        VALUES (@Teksts)";
+                    sqlite_cmd.Parameters.AddWithValue("@Teksts", teksts);
+                    sqlite_cmd.ExecuteNonQuery();
 
-                // Sagatavo ziņojumu par prognozēto kategoriju
-                string predictedCategory = $"Kategorija {maxIndex}";
+                    MessageBox.Show("Ziņa nosūtīta veiksmīgi!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Kļūda datu ievietošanā: {ex.Message}");
+            }
 
-                // Izvada informāciju par prognozēto kategoriju un tās varbūtībām uz konsoli
-                Console.WriteLine("MaxIndex: " + maxIndex);
-                Console.WriteLine("Prediction Scores: " + string.Join(", ", prediction.Score));
+            // Perform data submission logic
+            datu_nosutisana();
+        }
 
-                // Parāda atbilstošu ziņojumu, atkarībā no prognozētās kategorijas
-                if (maxIndex == 0)
+        private void datu_nosutisana()
+        {
+            var input = new ModelInput();
+            input.Col0 = zina.Text;
+
+            // Perform prediction using the machine learning model
+            ModelOutput prediction = ConsumeModel.Predict(input);
+
+            // Determine the predicted category based on the max probability
+            int maxIndex = 0;
+            float maxProbability = prediction.Score[0];
+
+            for (int i = 1; i < prediction.Score.Length; i++)
+            {
+                if (prediction.Score[i] > maxProbability)
                 {
-                    MessageBox.Show("Jūsu ziņa nosūtīta IT nozarei!");
+                    maxProbability = prediction.Score[i];
+                    maxIndex = i + 1; // Increment by 1 because category indices start from 1
                 }
-                else if (maxIndex == 2)
+            }
+
+            // Prepare the message for the predicted category
+            string predictedCategory = $"Kategorija {maxIndex}";
+            atbilde.Text = $"Jūsu ziņa nosūtīta {predictedCategory} nozarei!";
+        }
+
+        private string CalculateMD5Hash(string input)
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
                 {
-                    MessageBox.Show("Jūsu ziņa nosūtīta Finanšu nozarei!");
+                    sb.Append(hashBytes[i].ToString("x2"));
                 }
-                else if (maxIndex == 3)
-                {
-                    MessageBox.Show("Jūsu ziņa nosūtīta Pārdošanas nozarei!");
-                }
-                else if (maxIndex == 4)
-                {
-                    MessageBox.Show("Jūsu ziņa nosūtīta Cilvēkresursu nozarei!");
-                }
-                else if (maxIndex == 5)
-                {
-                    MessageBox.Show("Jūsu ziņa nosūtīta Mārketinga nozarei!");
-                }
+                return sb.ToString();
             }
         }
     }

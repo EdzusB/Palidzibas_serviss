@@ -49,6 +49,56 @@ IT budžeta pārskatīšanas sapulces ielūgums	1
 Servera darbības traucējumu paziņojums	1
 Mākoņu krātuves piešķiršanas pieprasījums	1
 IT drošības apzināšanas apmācības grafiks	1
+Nepieejams pakalpojums dēļ tehniskiem iemesliem	1
+Pieslēgšanās kļūda serverim	1
+Mobilā lietotne neatspēkojas	1
+Sistēmas uzlabošanas darbi	1
+Iesniegšanas kļūda tiešsaistes formā	1
+Pieteikuma piekļuves problēma	1
+Datu sinhronizācijas problēma	1
+E-pasta pievienošanas kļūda	1
+Neparedzētais sistēmas atjaunošanas process	1
+Ārkārtas servera uzturēšanas paziņojums	1
+Tīkla uzlabojumu ziņojums	1
+Pieteikuma veiktspējas problēma	1
+Lietotāja autentifikācijas problēma	1
+Dati zaudēti pēc sistēmas kļūdas	1
+Sistēmas neilgstoša apstāšanās	1
+Datu migrācijas kļūda	1
+Pakalpojumu nepieejamības brīdinājums	1
+Pieteikuma atsaukšanas iesniegums	1
+Datu kopijas atjaunošanas prasība	1
+Servera pārslogošanas risks	1
+Pieteikumu apstrādes aizkavēšanās	1
+Servera drošības incidenta paziņojums	1
+Tīkla pārslodzes problēma	1
+Lietotāju autentifikācijas aizkavēšanās	1
+Datu dublēšanas problēma	1
+Sistēmas nesagaidīta apturēšana	1
+Programmatūras konfigurācijas kļūda	1
+Nepieciešams papildu datu importēšanas process	1
+Nepieejamības prognozēšanas kļūda	1
+Lietotāju skaita limita sasniegšanas brīdinājums	1
+Neparedzētas programmatūras izpildes problēma	1
+Datu bāzes atjaunošanas pieprasījums	1
+Pieteikumu dublēšanas problēma	1
+E-pasta sūtīšanas aizkavēšanās	1
+Lietotāja datu nekorektuma problēma	1
+Nepieciešams programmatūras atjauninājums	1
+Pakalpojumu uzlabošanas darbi	1
+Sistēmas neilgstoša nepieejamība	1
+Mobilās lietotnes instalēšanas kļūda	1
+Nepieciešams lietotāja pārbaudes procesa atjaunošana	1
+Sistēmas resursu izsīkšanas brīdinājums	1
+Programmatūras licenču problēma	1
+Nepieejamība sakaru traucējumu dēļ	1
+Dati zaudēti pēc neparedzēta servera restarta	1
+Neparedzētas sistēmas pārmaiņas	1
+Nepieciešams datu bāzes kopijas atjaunošanas process	1
+Programmatūras instalācijas kļūda	1
+Pakalpojuma atjaunošanas pieprasījums	1
+Pieteikuma izpildes aizkavēšanās	1
+Nepieciešams servera uzturēšanas logs	1
 Rēķina maksājuma atgādinājums	2
 Izdevumu pārskatu iesniegšanas termiņš	2
 Budžeta apstiprināšanas pieprasījums	2
@@ -93,6 +143,56 @@ Aktīvu nolietojuma aprēķina atjauninājums	2
 Finanšu pārskatu precizitātes verifikācija	2
 Sarbanes-Oxley likuma atbilstības auditu paziņojums	2
 Ieņēmumu pieauguma prognozēšanas prezentācija	2
+Nodokļu dokumentu iesniegšanas atgādinājums	2
+Līguma apstiprināšanas pieprasījums	2
+Darbinieku atalgojuma pārskata sagatavošana	2
+Darba līguma grozījumu paziņojums	2
+Investīciju analīzes ziņojuma sagatavošana	2
+Grāmatvedības sistēmas izmaiņu ieviešana	2
+Parādu piedziņas procesa pārvaldība	2
+Budžeta izpildes pārskata veidošana	2
+Piegādātāja līguma pārskatīšana	2
+Darbinieku apdrošināšanas pieteikšanas process	2
+Pieteikums par biroja materiālu piegādi	2
+Pirkuma lēmuma apstiprināšanas procedūras paziņojums	2
+Darba laika uzskaites sistēmas atjaunināšana	2
+Finanšu pārvaldības politikas revīzijas priekšlikums	2
+Personāla atlases procedūras atjaunināšana	2
+Procesa efektivitātes novērtējuma veikšana	2
+Līguma noteikumu saskaņošanas paziņojums	2
+Darbinieku veiktspējas novērtēšanas plāna izstrāde	2
+Lietotāju skaita pārvaldības sistēmas uzlabošana	2
+Budžeta izdevumu kontroles procesa pārskatīšana	2
+Ieguldījumu portfeļa pārvaldības stratēģijas pārskats	2
+Ienākumu nodokļa deklarācijas iesniegšanas atgādinājums	2
+Darbinieku apmācības programmas izstrāde	2
+Rēķina apstiprināšanas procedūru atjaunināšana	2
+Nodokļu pārskatu sagatavošanas process	2
+Darba drošības pārbaudes izvērtējums	2
+Reklāmas kampaņas izmaksu kontroles plānošana	2
+Piegādātāju kvalitātes novērtēšanas procedūras pārskats	2
+Finanšu pārskatu salīdzināšanas analīze	2
+Darba laika regulējuma politikas pārskatīšana	2
+Parādu piedziņas darbības plāna izstrāde	2
+Ieguldījumu atlīdzības aprēķina metodoloģijas pārskats	2
+Reklāmas izdevumu budžeta novērtēšana un analīze	2
+Nodokļu pieteikuma izpildes procedūru saskaņošana	2
+Līgumu nosacījumu pārskatīšanas procesa uzlabošana	2
+Darbinieku atbalsta programmu izstrāde un ieviešana	2
+Finanšu sistēmas drošības novērtējuma veikšana	2
+Produktu cenu pielāgošanas politikas izstrāde	2
+Ieguldījumu veiktspējas salīdzināšanas analīze	2
+Ienākumu paziņojuma pareizības pārbaudes process	2
+Pirkumu lēmumu pieņemšanas procesa optimizēšana	2
+Darbinieku veselības apdrošināšanas pieteikšanas procedūra	2
+Budžeta izdevumu analīzes un plānošanas paziņojums	2
+Finanšu prognozēšanas modelēšanas metodoloģijas izstrāde	2
+Reklāmas kampaņu efektivitātes novērtēšana	2
+Darbinieku apmācību un attīstības plāna izveide	2
+Nodokļu atlaižu pieteikuma sagatavošana un iesniegšana	2
+Ieguldījumu risku novērtēšanas metožu pilnveidošana	2
+Parādu piedziņas stratēģijas izstrāde	2
+Finanšu kontroles procedūru uzlabošanas plāns	2
 Jaunā potenciālā klienta sekotne          	3
 Atbilde uz produktu vaicājumu              	3
 Demonstrācijas pieprasījuma apstiprinājums 	3
@@ -137,6 +237,56 @@ Pārdošanas kanāla partnerattiecību priekšlikums 	3
 Klientu piesaistes kampaņas plānošana     	3
 Pārdošanas iespēju nodrošināšanas apmācības programmas grafiks 	3
 Pārdošanas veiksmes stimulu brauciena paziņojums 	3
+Pārdošanas tendences un prognozes pārskats	3
+Pārdošanas sadarbības līguma izstrāde 	3
+Pārdošanas datu analīzes un interpretācijas sesija	3
+Līgumu izstrādes un noslēgšanas process	3
+Klientu mērķauditorijas identifikācija	3
+Pārdošanas veiksmes stāstu veidošana	3
+Pārdošanas produktu salīdzināšanas tabula	3
+Pārdošanas stratēģijas pilnveidošana un novērtēšana	3
+Pārdošanas speciālistu motivācijas programma	3
+Pārdošanas darbību efektivitātes novērtējums	3
+Pārdošanas potenciāla analīze un novērtējums	3
+Pārdošanas mērķu sasniegšanas plāns	3
+Pārdošanas inovāciju ieviešanas stratēģija	3
+Pārdošanas darbību automatizācijas ieviešana	3
+Pārdošanas projekta vadības plāna sagatavošana	3
+Pārdošanas līderības attīstības programma	3
+Pārdošanas rīku un tehnoloģiju izvērtēšana	3
+Pārdošanas izglītības un attīstības programma	3
+Klientu uzvedības analīze un interpretācija	3
+Pārdošanas darbību izmaksu analīze	3
+Klientu saziņas stratēģijas izstrāde	3
+Pārdošanas veiksmes novērtēšanas metodes izveide	3
+Pārdošanas darbību atskaišu izstrāde un novērtēšana	3
+Klientu lojalitātes programmas izstrāde	3
+Pārdošanas sadarbības partneru atlasīšana un pārskats	3
+Pārdošanas darbību efektivitātes uzlabošanas plāns	3
+Klientu pieredzes uzlabošanas programmas izstrāde	3
+Pārdošanas potenciāla novērtēšanas metožu izstrāde	3
+Pārdošanas rīku un tehnoloģiju implementācija	3
+Pārdošanas veiksmes stāstu kampaņas izstrāde	3
+Pārdošanas darbību analīzes un optimizācijas plāns	3
+Klientu datu analīzes un interpretācijas pārskats	3
+Pārdošanas stratēģijas saskaņošana ar mārketingu	3
+Pārdošanas darbību rezultātu novērtēšanas metodoloģija	3
+Pārdošanas plānošanas un prognozēšanas rīku izvērtēšana	3
+Klientu vajadzību analīze un segmentācija	3
+Pārdošanas procesa uzlabošanas un automatizācijas plāns	3
+Pārdošanas darbību vadības un uzraudzības sistēmas izveide	3
+Klientu apkalpošanas standartu definēšana un ieviešana	3
+Klientu apkalpošanas pieredzes analīze	3
+Pārdošanas potenciāla novērtēšanas modelis	3
+Klientu apkalpošanas procesa optimizācijas plāns	3
+Pārdošanas darbību rezultātu analīzes metodoloģija	3
+Pārdošanas stratēģijas pielāgošanas priekšlikums	3
+Pārdošanas veiksmes stāstu kampaņas plānošana	3
+Klientu datu integrācijas stratēģija pārdošanas procesā	3
+Pārdošanas mērķu sasniegšanas pārskata izstrāde	3
+Klientu apmierinātības aptaujas rezultātu analīze	3
+Pārdošanas veiksmes faktoru novērtēšana	3
+Klientu uzvedības analīzes ieviešana pārdošanā	3
 Laipni lūdzam komandā!                       	4
 Jaunā darbinieka orientācijas grafiks       	4
 Atgādinājums par labumu reģistrāciju        	4
@@ -179,6 +329,56 @@ Līdztiesības nodrošināšanas apmācības      	4
 Elastīgo tēriņu konta reģistrācijas termiņš 	4
 Uzņemšanas atsauksmju pieprasījums         	4
 Darbinieku rokasgrāmatas pārskata sesiju grafiks 	4
+Jaunā darbinieka ieviešanas programma	4
+Darbinieku apmācības satura atjauninājums	4
+Veselības un drošības regulējuma pārskats	4
+Darbinieku palīdzības programmas jauninājums	4
+Darbinieku līgumu un politiku pārskats	4
+Darbinieku atsauksmju un novērtējumu sesija	4
+Darba intervijas laika noteikšana un organizēšana	4
+Darba pienākumu saraksta atjauninājums	4
+Darba laika un atvaļinājumu reģistrācijas sistēmas izmaiņas	4
+Darbinieku veselības un drošības uzraudzības paziņojums	4
+Darbinieku labumu programmas izmaiņu atspoguļojums	4
+Darbinieku sūdzību un strīdu risināšanas process	4
+Darbinieku atzinības programmas izstrāde un ieviešana	4
+Darbinieku darba pieredzes aptaujas organizēšana	4
+Darbinieku atsauksmju un ieteikumu programma	4
+Darbinieku veselības un labklājības apmācības grafiks	4
+Darbinieku kultūras un vērtību atjauninājums	4
+Darbinieku līdzdalības un iesaistes programmas paziņojums	4
+Darbinieku atlaišanas procedūru atjauninājums	4
+Darbinieku prakses un mācību programmas ieviešana	4
+Darba līguma parakstīšanas sesijas grafiks	4
+Darbinieku veselības apdrošināšanas iesniegšanas atgādinājums	4
+Personāla attīstības plāna paziņojums	4
+Jaunās veselības un drošības politikas prezentācija	4
+Darba atvaļinājuma pieteikšanas procedūras atjauninājums	4
+Darbinieku pieteikumu pārskata apstiprinājums	4
+Darba koplīguma apstiprināšanas procedūra	4
+Prakses programmas uzņemšanas grafiks	4
+Darbinieku motivācijas semināra ielūgums	4
+Darbinieku darba laika reģistrācijas atgādinājums	4
+Veselības un drošības apmācības programmas grafiks	4
+Darbinieku labumu programmas pieteikšanas termiņš	4
+Darbinieku labumu klāstu izmaiņu paziņojums	4
+Darbinieku konfliktu risināšanas procedūras atjauninājums	4
+Darbinieku iedibināšanas programmas paziņojums	4
+Darbinieku labumu izmaiņu paziņojums	4
+Darba vietu drošības vingrinājuma plāns	4
+Darbinieku līdztiesības nodrošināšanas semināra ielūgums	4
+Darbinieku uzņemšanas un atlaišanas procedūru apstiprinājums	4
+Darbinieku veselības un drošības jautājumu seminārs	4
+Darbinieku kompetenču attīstības programma	4
+Darbinieku lojalitātes un motivācijas analīze	4
+Darbinieku veselības apdrošināšanas pieteikšanas atgādinājums	4
+Darbinieku darba laika reģistrācijas sistēmas jauninājums	4
+Darbinieku darba drošības apmācības grafiks	4
+Darbinieku darba līgumu maiņas procedūra	4
+Darbinieku darba izdevumu atlīdzināšanas paziņojums	4
+Darbinieku veselības uzraudzības programma	4
+Darbinieku atsauksmju un novērtējumu sistēmas pilnveidošana	4
+Darbinieku darba efektivitātes novērtēšanas metodes izstrāde	4
 Jauna produkta iznākuma paziņojums          	5
 Sociālo tīklu kampaņas atjauninājums        	5
 E-pasta biļtena dizaina apstiprinājums       	5
@@ -220,3 +420,103 @@ Mārketinga materiālu drukas statusa atjauninājums 	5
 Ieteikumu programmas stimuli maiņas paziņojums 	5
 Interaktīvas vebināra reģistrācijas apstiprinājums 	5
 E-pasta mārketinga A/B testēšanas plāna apstiprinājums 	5
+E-komercijas mārketinga kampaņas optimizācijas plāns	5
+Satura stratēģijas izstrāde sociālajiem tīkliem	5
+SEO auditēšanas rezultātu prezentācija	5
+Reklāmas materiālu izstrādes un testēšanas plāns	5
+Mārketinga automācijas platformas integrācijas projekts	5
+Klientu apmierinātības aptaujas analīze un secinājumi	5
+Digitālo reklāmu efektivitātes novērtējuma ziņojums	5
+Sociālo tīklu ietekmētāju sadarbības stratēģijas izstrāde	5
+Produkta demonstrācijas video maršruta plānošana	5
+Mārketinga mērķu un stratēģiju pārskats	5
+Mājaslapas SEO optimizācijas priekšlikumi	5
+E-pasta biļtena satura kalendāra izveide un apstiprināšana	5
+Video produkcijas grafikas un skripta izstrāde	5
+Reklāmas kampaņas veiktspējas pārskats un rekomendācijas	5
+Mārketinga budžeta plānošana un pieprasījuma pārskats	5
+Digitālo reklāmu rezultātu analīze un optimizācija	5
+Sociālo mediju kampaņas izpildes plānošana	5
+Interaktīvas vebināra sagatavošanas grafiks	5
+SEO optimizācijas pasākumu izstrāde un ieviešana	5
+Mārketinga materiālu izvēles un ieviešanas plāns	5
+Reklāmas kampaņas rezultātu analīzes ziņojums	5
+Mārketinga stratēģijas izstrādes darbnīcas grafiks	5
+Video saturam paredzēto plānošanas sesiju organizēšana	5
+Sociālo mediju mērķu sasniegšanas pārskats	5
+Satura lokalizācijas projekta vadības plāns	5
+Mājaslapas un sociālo tīklu reklāmu veiktspējas analīze	5
+Mārketinga automācijas procesa pilnveides priekšlikums	5
+Tirgus pētījuma rezultātu interpretācija un secinājumi	5
+SEO optimizācijas rezultātu pārskata prezentācija	5
+E-pasta mārketinga stratēģijas pārskats un jauninājumi	5
+Reklāmas kampaņas plānošanas sesijas organizēšana	5
+Satura mārketinga kalendāra izstrāde un apstiprināšana	5
+Digitālās mārketinga kampaņas veiktspējas novērtējums	5
+Sociālo mediju kontu pārvaldības plāns	5
+Mārketinga stratēģijas implementācijas uzraudzība	5
+Reklāmas materiālu izstrādes progresu ziņojums	5
+Klientu atsauksmju un vēlmju apkopošanas procesa organizēšana	5
+E-pasta biļtena izstrādes un izsūtīšanas plānošana	5
+Video mārketinga stratēģijas pārskats un jauninājumi	5
+Mārketinga materiālu testēšanas rezultātu analīze	5
+Mārketinga kampaņas veiktspējas novērtējuma atskaite	5
+SEO optimizācijas pasākumu ieviešanas plāns	5
+Satura kalendāra satura jauninājumu apstiprinājums	5
+Reklāmas materiālu izstrādes grafiskās koncepcijas apstiprinājums	5
+Mārketinga materiālu izvēles un izstrādes saskaņošanas sesija	5
+Sociālo mediju ziņojumu satura plānošanas sesija	5
+Tirgus segmentācijas analīzes ziņojuma prezentācija	5
+Mārketinga kampaņas izpildes saskaņošanas grafiks	5
+Reklāmas materiālu veiktspējas testa rezultātu analīze	5
+Digitālās mārketinga kampaņas rezultātu salīdzināšana	5
+Atrasta kļūda produkcijas līnijā. Nepieciešama ātra rīcība	6
+Klients sūdzas par defektīvu produktu. Lūdzu, izmeklējiet	6
+Produkta neatbilstības ziņojums no pārdošanas	6
+Ierosinājums uzlabot kvalitātes pārbaudi	6
+Nepieciešama papildu apmācība darbiniekiem par kvalitātes standartiem	6
+Kļūdu skaits ražošanā ir palielinājies. Jāizvērtē iemesli	6
+Materiālu piegādātājs paziņojis par iespējamu defektu	6
+Nepieciešams jauns pārbaudes veids pēc ražošanas kļūdu	6
+Paziņojums par nepieciešamību izlabot konkrētu kvalitātes protokolu	6
+Jauna defektu novēršanas procedūra jāiekļauj ražošanas plānā	6
+Materiāla piegādātājs ziņo par nesaskaņotību materiālu specifikācijās	6
+Nepieciešams ātrāks atbildes laiks uz klienta reklamāciju	6
+Pārdošanas komanda konstatējusi biežus produktu defektus	6
+Atgādinājums par nepieciešamību veikt iekšējo auditu	6
+Ierosinājums optimizēt produkcijas izmantošanu, lai samazinātu atlikušos defektus	6
+Mārketinga izpildes komanda lūdz padomu par kvalitātes standartiem jaunam produktam	6
+Izstrādāts jauns veids, kā uzraudzīt produktu kvalitāti ražošanas procesā	6
+Nepieciešama atkārtota apmācība darbiniekiem par kvalitātes pārbaudēm	6
+Paziņojums par uzlabotu kvalitātes kontroli izlietotajām izejvielām	6
+Reklamācija par produktu ar sliktu izpildi	6
+Uzsākts projekts, lai uzlabotu saskaņotību starp ražošanas un kvalitātes vadības komandām	6
+Ierosinājums par jaunu kvalitātes pārbaudes instrumentu ieviešanu	6
+Klients lūdz detalizētu kvalitātes ziņojumu par pēdējām piegādēm	6
+Nepieciešams pārskats par ražošanas procesa uzlabojumiem, lai samazinātu produktu defektu skaitu	6
+Defekta novēršanas plāns pēc pēdējās auditācijas atklājumiem	6
+Atrasts veids, kā uzlabot piegādes pārbaudes procedūras	6
+Paziņojums par jaunu kvalitātes kontroli piegādātāju līmenī	6
+Atgādinājums par regulāro kvalitātes pārbaudi ražošanas procesā	6
+Paziņojums par jauniem noteikumiem kvalitātes uzraudzībai pēc nepareizas produkcijas atklāšanas	6
+Nepieciešama sākotnējā pārbaude pēc jaunas ražošanas līnijas ieviešanas	6
+Paziņojums par nepieciešamību aizstāt bojātu aprīkojumu ražošanas līnijā	6
+Klients paziņo par nesaprašanos attiecībā uz produkta kvalitāti	6
+Darbinieki lūdz papildu norādes par kvalitātes standartiem	6
+Materiāla piegādātājs prasa detalizētu informāciju par kvalitātes pārbaudes procedūrām	6
+Nepieciešams steidzams ziņojums par pēdējo produktu kvalitātes statistiku	6
+Paziņojums par nepieciešamību aizsargāt kvalitāti ar jauniem drošības pasākumiem	6
+Aicinājums uzlabot produkcijas pārbaudes laikus		6
+Atgādinājums par regulārām kvalitātes revīzijām	6
+Ziņojums par ražošanas defektu samazināšanas pasākumu ietekmi	6
+Paziņojums par jauniem standartiem iepakojuma kvalitātei	6
+Nepieciešams atjaunināt kvalitātes uzraudzības protokolus	6
+Materiāla piegādātājs ziņo par jaunām problēmām ražošanas sākumposmā	6
+Lūgums pārskatīt kvalitātes politiku pēc pēdējām sūdzībām	6
+Ierosinājums izmantot jaunus mērījumu instrumentus kvalitātes uzraudzībā	6
+Paziņojums par nepieciešamību izveidot jaunas kvalitātes apmācības programmas	6
+Atgādinājums par kvalitātes problēmu izsekošanas sistēmu	6
+Klients lūdz informāciju par kvalitātes sertifikātiem	6
+Aicinājums izveidot izmeklēšanas komisiju, lai analizētu jaunos defektus	6
+Nepieciešama pilnveide attiecībā uz izstrādāto produkcijas aprakstu	6
+Materiāla piegādātājs prasa papildu informāciju par kvalitātes pārbaudēm	6

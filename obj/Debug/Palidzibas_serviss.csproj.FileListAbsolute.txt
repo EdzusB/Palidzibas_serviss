@@ -50,12 +50,31 @@ C:\Users\Lietotajs\Documents\Programmesana\Palidzibas_serviss\obj\Debug\Palidzib
 C:\Users\Lietotajs\Documents\Programmesana\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CopyComplete
 C:\Users\Lietotajs\Documents\Programmesana\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
 C:\Users\Lietotajs\Documents\Programmesana\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csprojAssemblyReference.cache
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form1.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form2.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form3.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Properties.Resources.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.GenerateResource.cache
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CoreCompileInputs.cache
 Z:\Palidzibas_serviss\bin\Debug\LdaNative.dll
 Z:\Palidzibas_serviss\bin\Debug\CpuMathNative.dll
 Z:\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe.config
 Z:\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe
 Z:\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.pdb
+Z:\Palidzibas_serviss\bin\Debug\EntityFramework.dll
+Z:\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.dll
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.dll
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.dll
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.Data.dll
@@ -69,13 +88,29 @@ Z:\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Buffers.dll
 Z:\Palidzibas_serviss\bin\Debug\System.CodeDom.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.dll
+Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.dll
+Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.EF6.dll
+Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.Linq.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Memory.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Threading.Channels.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.dll
+Z:\Palidzibas_serviss\bin\Debug\System.ValueTuple.dll
+Z:\Palidzibas_serviss\bin\Debug\EntityFramework.xml
+Z:\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.xml
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.xml
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.xml
 Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.xml
@@ -88,27 +123,237 @@ Z:\Palidzibas_serviss\bin\Debug\Microsoft.ML.Transforms.xml
 Z:\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Buffers.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.xml
+Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Memory.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Threading.Channels.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.xml
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csprojAssemblyReference.cache
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form1.resources
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Properties.Resources.resources
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.GenerateResource.cache
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CoreCompileInputs.cache
+Z:\Palidzibas_serviss\bin\Debug\System.ValueTuple.xml
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CopyComplete
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
-Z:\Palidzibas_serviss\bin\Debug\EntityFramework.dll
-Z:\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.dll
-Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.dll
-Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.EF6.dll
-Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.Linq.dll
-Z:\Palidzibas_serviss\bin\Debug\EntityFramework.xml
-Z:\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.xml
-Z:\Palidzibas_serviss\bin\Debug\System.Data.SQLite.xml
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form2.resources
-Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form3.resources
+Z:\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x86.dll
+Z:\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x64.dll
+Z:\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.so
+Z:\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.dylib
+Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.dll
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.dll
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.dll
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.dll
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.dll
+Z:\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+Z:\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.dll
+Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.pdb
+Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.xml
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.pdb
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.xml
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.pdb
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.xml
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.pdb
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.xml
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.pdb
+Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.xml
+Z:\Palidzibas_serviss\bin\Debug\System.CodeDom.xml
+Z:\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+Z:\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\LdaNative.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\CpuMathNative.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe.config
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Google.Protobuf.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Data.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.DataView.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.KMeansClustering.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.PCA.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.StandardTrainers.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Transforms.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Buffers.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.CodeDom.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Memory.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Channels.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.ValueTuple.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Google.Protobuf.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Google.Protobuf.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Data.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.DataView.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.KMeansClustering.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.PCA.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.StandardTrainers.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Transforms.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Buffers.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.CodeDom.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Memory.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Channels.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.ValueTuple.xml
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.AssemblyReference.cache
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form1.resources
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form2.resources
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form3.resources
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Properties.Resources.resources
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.GenerateResource.cache
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CoreCompileInputs.cache
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CopyComplete
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\OpenAI_API.dll
+C:\Users\Lietotajs\Downloads\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\OpenAI_API.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\CpuMathNative.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\LdaNative.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe.config
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.exe
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Palidzibas_serviss.pdb
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Data.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.DataView.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.KMeansClustering.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.PCA.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.StandardTrainers.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Transforms.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Buffers.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.CodeDom.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Memory.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Channels.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.ValueTuple.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Bcl.Numerics.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Core.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.CpuMath.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Data.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.DataView.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.KMeansClustering.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.PCA.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.StandardTrainers.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.ML.Transforms.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Buffers.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.CodeDom.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Data.SQLite.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Memory.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Tensors.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Channels.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\System.ValueTuple.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.AssemblyReference.cache
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form1.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form2.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form3.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Properties.Resources.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.GenerateResource.cache
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CoreCompileInputs.cache
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CopyComplete
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb

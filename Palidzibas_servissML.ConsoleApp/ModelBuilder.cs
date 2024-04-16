@@ -7,6 +7,7 @@ using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using Palidzibas_servissML.Model;
+using Microsoft.ML.Trainers;
 
 namespace Palidzibas_servissML.ConsoleApp
 {
@@ -50,7 +51,7 @@ namespace Palidzibas_servissML.ConsoleApp
                                       .Append(mlContext.Transforms.NormalizeMinMax("Features", "Features"))
                                       .AppendCacheCheckpoint(mlContext);
             // Set the training algorithm 
-            var trainer = mlContext.MulticlassClassification.Trainers.SdcaMaximumEntropy(labelColumnName: "col1", featureColumnName: "Features")
+            var trainer = mlContext.MulticlassClassification.Trainers.OneVersusAll(mlContext.BinaryClassification.Trainers.SgdCalibrated(new SgdCalibratedTrainer.Options() { L2Regularization = 5E-07f, ConvergenceTolerance = 1E-05f, NumberOfIterations = 20, Shuffle = false, LabelColumnName = "col1", FeatureColumnName = "Features" }), labelColumnName: "col1")
                                       .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel", "PredictedLabel"));
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
