@@ -358,3 +358,4 @@ C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form4.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form5.resources

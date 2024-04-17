@@ -51,7 +51,7 @@ namespace Palidzibas_serviss
             this.zinu_tabula.Name = "zinu_tabula";
             this.zinu_tabula.RowHeadersWidth = 51;
             this.zinu_tabula.RowTemplate.Height = 24;
-            this.zinu_tabula.Size = new System.Drawing.Size(775, 159);
+            this.zinu_tabula.Size = new System.Drawing.Size(775, 140);
             this.zinu_tabula.TabIndex = 1;
             // 
             // Form4
