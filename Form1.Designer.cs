@@ -34,6 +34,7 @@ namespace Palidzibas_serviss
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.atbilde = new System.Windows.Forms.TextBox();
+            this.tabula = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nosutit
@@ -85,10 +86,20 @@ namespace Palidzibas_serviss
             // atbilde
             // 
             this.atbilde.Location = new System.Drawing.Point(393, 256);
-            this.atbilde.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.atbilde.Margin = new System.Windows.Forms.Padding(4);
             this.atbilde.Name = "atbilde";
             this.atbilde.Size = new System.Drawing.Size(375, 22);
             this.atbilde.TabIndex = 4;
+            // 
+            // tabula
+            // 
+            this.tabula.Location = new System.Drawing.Point(583, 351);
+            this.tabula.Name = "tabula";
+            this.tabula.Size = new System.Drawing.Size(75, 23);
+            this.tabula.TabIndex = 5;
+            this.tabula.Text = "Tālāk";
+            this.tabula.UseVisualStyleBackColor = true;
+            this.tabula.Click += new System.EventHandler(this.tabula_Click);
             // 
             // Form1
             // 
@@ -96,6 +107,7 @@ namespace Palidzibas_serviss
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(803, 453);
+            this.Controls.Add(this.tabula);
             this.Controls.Add(this.atbilde);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -118,6 +130,7 @@ namespace Palidzibas_serviss
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox atbilde;
+        private System.Windows.Forms.Button tabula;
     }
 }
 

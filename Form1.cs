@@ -139,5 +139,12 @@ namespace Palidzibas_serviss
                 return sb.ToString();
             }
         }
+
+        private void tabula_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4(receivedValue);
+            f4.Show(); // Show Form1
+            this.Hide();
+        }
     }
 }
