@@ -45,15 +45,23 @@ namespace Palidzibas_serviss
             try
             {
                 using (SQLiteConnection sqlite_conn = CreateConnection())
-                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                 {
-                    sqlite_cmd.CommandText = @"
-                        INSERT INTO Zina (Teksts)
-                        VALUES (@Teksts)";
-                    sqlite_cmd.Parameters.AddWithValue("@Teksts", teksts);
-                    sqlite_cmd.ExecuteNonQuery();
+                    using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                    {
+                        // Use parameterized query to avoid SQL injection and ensure correct column-value mapping
+                        sqlite_cmd.CommandText = @"
+                    INSERT INTO Zina (Datu_id, Teksts)
+                    VALUES (@Datu_id, @Teksts)";
 
-                    MessageBox.Show("Ziņa nosūtīta veiksmīgi!");
+                        // Bind parameters with actual values
+                        sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue);
+                        sqlite_cmd.Parameters.AddWithValue("@Teksts", teksts);
+
+                        // Execute the query
+                        sqlite_cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Ziņa nosūtīta veiksmīgi!");
+                    }
                 }
             }
             catch (Exception ex)
@@ -88,7 +96,32 @@ namespace Palidzibas_serviss
 
             // Prepare the message for the predicted category
             string predictedCategory = $"Kategorija {maxIndex}";
-            atbilde.Text = $"Jūsu ziņa nosūtīta {predictedCategory} nozarei!";
+
+            if (maxIndex == 0)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta IT nozarei!";
+            }
+            else if (maxIndex == 2)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta Finanšu nozarei!";
+            }
+            else if (maxIndex == 3)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta Pārdošanas nozarei!";
+            }
+            else if (maxIndex == 4)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta Cilvēkresursu nozarei!";
+            }
+            else if (maxIndex == 5)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta Mārketinga nozarei!";
+            }
+            else if (maxIndex == 6)
+            {
+                atbilde.Text = $"Jūsu ziņa nosūtīta Kvalitātes kontroles nozarei!";
+            }
+
         }
 
         private string CalculateMD5Hash(string input)
