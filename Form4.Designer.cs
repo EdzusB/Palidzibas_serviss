@@ -62,7 +62,8 @@ namespace Palidzibas_serviss
             this.Controls.Add(this.zinu_tabula);
             this.Controls.Add(this.button1);
             this.Name = "Form4";
-            this.Text = "paradit";
+            this.Text = "Ziņu apskate";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.zinu_tabula)).EndInit();
             this.ResumeLayout(false);
 

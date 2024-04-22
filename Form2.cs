@@ -107,10 +107,14 @@ namespace Palidzibas_serviss
                 MessageBox.Show("Lūdzu aizpildiet visus ievades laukus!");
             }
 
-
+            Registreties();
         }
         private void talak_Click(object sender, EventArgs e)
         {
+            
+        }
+        private void Registreties()
+        { 
             string inputUsername = lietotajvards.Text; // Get username text from TextBox
 
             try
@@ -120,7 +124,7 @@ namespace Palidzibas_serviss
                 {
                     // Use parameterized query to retrieve Datu_ID based on username
                     sqlite_cmd.CommandText = @"
-                SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
+                    SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
                     sqlite_cmd.Parameters.AddWithValue("@lietotajvards", inputUsername);
 
                     // Execute the query to retrieve the Datu_ID
@@ -129,7 +133,6 @@ namespace Palidzibas_serviss
                     if (result != null && result != DBNull.Value)
                     {
                         int datu_id = Convert.ToInt32(result);
-                        MessageBox.Show($"Lietotājs atrasts ar ID: {datu_id}");
 
                         // Show Form1 with the retrieved datu_id
                         Form1 f1 = new Form1(datu_id); // Pass the datu_id to Form1 constructor

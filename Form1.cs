@@ -4,6 +4,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using Palidzibas_servissML.Model;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Palidzibas_serviss
 {
@@ -15,6 +17,25 @@ namespace Palidzibas_serviss
         {
             InitializeComponent(); // Initialize form components
             this.receivedValue = datu_id; // Set received value to the class field
+        }
+        async Task<DateTime> GetCurrentDateTimeFromAPI()
+        {
+            string apiUrl = "http://worldtimeapi.org/api/ip"; // Use IP-based API to get current date and time
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
+                if (response.IsSuccessStatusCode)
+                {
+                    string jsonResult = await response.Content.ReadAsStringAsync();
+                    dynamic result = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonResult);
+                    DateTime currentDateTime = result.datetime;
+                    return currentDateTime;
+                }
+                else
+                {
+                    throw new Exception("Failed to retrieve date and time from API");
+                }
+            }
         }
 
         private SQLiteConnection CreateConnection()
@@ -31,7 +52,7 @@ namespace Palidzibas_serviss
             return sqlite_conn;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             string teksts = zina.Text;
 
@@ -44,23 +65,24 @@ namespace Palidzibas_serviss
             // Insert data into the Zina table
             try
             {
+                DateTime currentDateTime = await GetCurrentDateTimeFromAPI();
+
                 using (SQLiteConnection sqlite_conn = CreateConnection())
                 {
                     using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                     {
                         // Use parameterized query to avoid SQL injection and ensure correct column-value mapping
                         sqlite_cmd.CommandText = @"
-                    INSERT INTO Zina (Datu_id, Teksts)
-                    VALUES (@Datu_id, @Teksts)";
+                    INSERT INTO Zina (Datu_id, Teksts, Datums_laiks)
+                    VALUES (@Datu_id, @Teksts, @Datums_laiks)";
 
                         // Bind parameters with actual values
                         sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue);
                         sqlite_cmd.Parameters.AddWithValue("@Teksts", teksts);
+                        sqlite_cmd.Parameters.AddWithValue("@Datums_laiks", currentDateTime);
 
                         // Execute the query
                         sqlite_cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Ziņa nosūtīta veiksmīgi!");
                     }
                 }
             }
@@ -97,31 +119,71 @@ namespace Palidzibas_serviss
             // Prepare the message for the predicted category
             string predictedCategory = $"Kategorija {maxIndex}";
 
+           string nozare = ""; // Declare `nozare` at a higher scope
+
             if (maxIndex == 0)
             {
+                nozare = "IT";
                 atbilde.Text = $"Jūsu ziņa nosūtīta IT nozarei!";
             }
             else if (maxIndex == 2)
             {
+                nozare = "Finanšu";
                 atbilde.Text = $"Jūsu ziņa nosūtīta Finanšu nozarei!";
             }
             else if (maxIndex == 3)
             {
+                nozare = "Pārdošanas";
                 atbilde.Text = $"Jūsu ziņa nosūtīta Pārdošanas nozarei!";
             }
             else if (maxIndex == 4)
             {
+                nozare = "Cilvēkresursu";
                 atbilde.Text = $"Jūsu ziņa nosūtīta Cilvēkresursu nozarei!";
             }
             else if (maxIndex == 5)
             {
+                nozare = "Mārketinga";
                 atbilde.Text = $"Jūsu ziņa nosūtīta Mārketinga nozarei!";
             }
             else if (maxIndex == 6)
             {
+                nozare = "Kvalitātes kontroles";
                 atbilde.Text = $"Jūsu ziņa nosūtīta Kvalitātes kontroles nozarei!";
             }
 
+            string inputzina = zina.Text;
+
+            using (SQLiteConnection sqlite_conn = CreateConnection())
+            {
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    sqlite_cmd.CommandText = @"
+                    SELECT Zina_ID FROM Zina WHERE Teksts = @Teksts";
+                    sqlite_cmd.Parameters.AddWithValue("@Teksts", inputzina);
+
+                    // Execute the query to retrieve the Zina_ID
+                    object result = sqlite_cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        int zina_id = Convert.ToInt32(result);
+
+                        // Now insert into Nozare table
+                        sqlite_cmd.CommandText = @"
+                    INSERT INTO Nozare (nozare, Datu_id, Zina_id)
+                    VALUES (@Nozare, @Datu_id, @Zina_id)";
+
+                        // Bind parameters with actual values
+                        sqlite_cmd.Parameters.AddWithValue("@Nozare", nozare);
+                        sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue);
+                        sqlite_cmd.Parameters.AddWithValue("@Zina_id", zina_id);
+
+                        // Execute the insertion query
+                        sqlite_cmd.ExecuteNonQuery();
+                    }
+                }
+            }
         }
 
         private string CalculateMD5Hash(string input)
@@ -145,6 +207,11 @@ namespace Palidzibas_serviss
             Form4 f4 = new Form4(receivedValue);
             f4.Show(); // Show Form1
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

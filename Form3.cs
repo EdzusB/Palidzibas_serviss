@@ -144,7 +144,6 @@ namespace Palidzibas_serviss
                             if (result != null && result != DBNull.Value)
                             {
                                 datu_id = Convert.ToInt32(result); // Update datu_id with retrieved ID
-                                MessageBox.Show($"User found with ID: {datu_id}");
 
                                 // Pass the datu_id value to Form1
                                 Form1 f1 = new Form1(datu_id);

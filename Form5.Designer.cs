@@ -85,7 +85,7 @@ namespace Palidzibas_serviss
             this.Controls.Add(this.dzesanas_tabula);
             this.Controls.Add(this.dzesanas_izvele);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Datu pārvalde";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dzesanas_tabula)).EndInit();
             this.ResumeLayout(false);

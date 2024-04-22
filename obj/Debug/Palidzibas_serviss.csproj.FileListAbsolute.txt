@@ -281,7 +281,6 @@ C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.dll
@@ -319,7 +318,6 @@ C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
-C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Options.xml
@@ -359,3 +357,7 @@ C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form4.resources
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form5.resources
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml

@@ -50,7 +50,7 @@ namespace Palidzibas_serviss
                     using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                     {
                         // Define the SQL query with a parameter for Datu_id
-                        sqlite_cmd.CommandText = "SELECT Zina_ID, Teksts FROM Zina WHERE Datu_id = @Datu_id";
+                        sqlite_cmd.CommandText = "SELECT Zina_ID, Teksts, Datums_laiks FROM Zina WHERE Datu_id = @Datu_id";
                         sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue1);
 
                         // Create a DataTable to store the query results
@@ -73,5 +73,9 @@ namespace Palidzibas_serviss
             }
         }
 
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

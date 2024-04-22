@@ -39,19 +39,26 @@
             // 
             // pieteikties
             // 
-            this.pieteikties.Location = new System.Drawing.Point(332, 284);
-            this.pieteikties.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pieteikties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.pieteikties.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pieteikties.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.pieteikties.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.pieteikties.Location = new System.Drawing.Point(92, 250);
+            this.pieteikties.Margin = new System.Windows.Forms.Padding(4);
             this.pieteikties.Name = "pieteikties";
-            this.pieteikties.Size = new System.Drawing.Size(206, 28);
+            this.pieteikties.Size = new System.Drawing.Size(250, 41);
             this.pieteikties.TabIndex = 0;
             this.pieteikties.Text = "Pieteikties kā lietotājs";
+            this.pieteikties.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.pieteikties.UseVisualStyleBackColor = true;
             this.pieteikties.Click += new System.EventHandler(this.pieteikties_Click);
             // 
             // Parole
             // 
-            this.Parole.Location = new System.Drawing.Point(507, 210);
-            this.Parole.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Parole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.Parole.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Parole.Location = new System.Drawing.Point(349, 148);
+            this.Parole.Margin = new System.Windows.Forms.Padding(4);
             this.Parole.Name = "Parole";
             this.Parole.Size = new System.Drawing.Size(132, 22);
             this.Parole.TabIndex = 1;
@@ -59,8 +66,10 @@
             // 
             // Lietotajvards
             // 
-            this.Lietotajvards.Location = new System.Drawing.Point(507, 167);
-            this.Lietotajvards.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Lietotajvards.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.Lietotajvards.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Lietotajvards.Location = new System.Drawing.Point(349, 85);
+            this.Lietotajvards.Margin = new System.Windows.Forms.Padding(4);
             this.Lietotajvards.Name = "Lietotajvards";
             this.Lietotajvards.Size = new System.Drawing.Size(132, 22);
             this.Lietotajvards.TabIndex = 2;
@@ -68,41 +77,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(466, 362);
+            this.label1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.label1.Location = new System.Drawing.Point(233, 317);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 17);
+            this.label1.Size = new System.Drawing.Size(248, 51);
             this.label1.TabIndex = 3;
             this.label1.Text = "Vai jums vēl nav konta?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(381, 175);
+            this.label2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.label2.Location = new System.Drawing.Point(146, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
+            this.label2.Size = new System.Drawing.Size(145, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Lietotājvārds";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(381, 219);
+            this.label3.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.label3.Location = new System.Drawing.Point(210, 132);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 17);
+            this.label3.Size = new System.Drawing.Size(81, 51);
             this.label3.TabIndex = 5;
             this.label3.Text = "Parole";
             // 
             // admin
             // 
-            this.admin.Location = new System.Drawing.Point(545, 284);
+            this.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.admin.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
+            this.admin.Location = new System.Drawing.Point(349, 250);
             this.admin.Name = "admin";
-            this.admin.Size = new System.Drawing.Size(206, 28);
+            this.admin.Size = new System.Drawing.Size(250, 41);
             this.admin.TabIndex = 6;
             this.admin.Text = "Pieteikties kā pārvaldnieks";
+            this.admin.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.admin.UseVisualStyleBackColor = true;
             this.admin.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -110,7 +130,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(95)))), ((int)(((byte)(45)))));
+            this.ClientSize = new System.Drawing.Size(682, 403);
             this.Controls.Add(this.admin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -118,9 +139,10 @@
             this.Controls.Add(this.Lietotajvards);
             this.Controls.Add(this.Parole);
             this.Controls.Add(this.pieteikties);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ielogošanās";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
