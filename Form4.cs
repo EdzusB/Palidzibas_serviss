@@ -77,5 +77,14 @@ namespace Palidzibas_serviss
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int datu_id = receivedValue1;
+            Form1 f1 = new Form1(datu_id);
+            f1.Show();
+            this.Hide();
+
+        }
     }
 }

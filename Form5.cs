@@ -159,6 +159,20 @@ namespace Palidzibas_serviss
                     dzesanas_tabula.DataSource = sTable;
                 }
             }
+
+            id_numurs.Clear();
+        }
+
+        private void id_numurs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
         }
     }
 }

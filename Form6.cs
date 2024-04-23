@@ -61,7 +61,7 @@ namespace Palidzibas_serviss
 
                         if (rowsUpdated > 0)
                         {
-                            MessageBox.Show("Parole veiksmīgi mainīta!");
+                            MessageBox.Show("Parole veiksmīgi nomainīta!");
                         }
                         else
                         {
@@ -79,6 +79,13 @@ namespace Palidzibas_serviss
             {
                 MessageBox.Show("Paroles nesakrīt!");
             }
+        }
+
+        private void atgriezties_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
         }
     }
 }

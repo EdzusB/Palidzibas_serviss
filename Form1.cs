@@ -213,5 +213,12 @@ namespace Palidzibas_serviss
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
+        }
     }
 }
