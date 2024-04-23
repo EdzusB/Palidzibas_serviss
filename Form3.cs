@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Security.Cryptography;
@@ -14,6 +9,8 @@ namespace Palidzibas_serviss
 {
     public partial class Form3 : Form
     {
+        private string _connectionString = "Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;";
+
         public Form3()
         {
             InitializeComponent();
@@ -21,77 +18,10 @@ namespace Palidzibas_serviss
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            // Šī metode tiek izsaukta, kad Form3 tiek ielādēts.
         }
 
-        static SQLiteConnection CreateConnection() //Konekcija ar datubāzi
-        {
-            SQLiteConnection sqlite_conn;
-            sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version = 3; New = True; Compress = True; ");
-            try
-            {
-                sqlite_conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Konekcija neizdevās!");
-            }
-            return sqlite_conn;
-        }
-
-        private List<string> GetListOfUsernamesFromDatabase() //Funkcija, kas iegūst visus lietotājvārdus no datubāzes
-        {
-            List<string> usernameList = new List<string>(); //Ievieš jaunu mainīgo
-
-            using (SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;")) //Konektējas ar datubāzi
-            {
-                sqlite_conn.Open(); //Atver datubāzi
-
-                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
-                {
-                    sqlite_cmd.CommandText = "SELECT Lietotajvards FROM Lietotaja_dati"; //Izvēlas visus mainīgos no attiecīgās kollonas - Lietotajvards
-
-                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
-                    {
-                        while (sqlite_datareader.Read())
-                        {
-                            string username = sqlite_datareader["Lietotajvards"].ToString(); //Visus lietotajvardus ielasa sarakstā
-                            usernameList.Add(username);
-                        }
-                    }
-                }
-            }
-
-            return usernameList; //Atgriež sarakstu
-        }
-
-        private List<string> GetListOfHashedPasswordsFromDatabase() //Funkcija, kas iegūst visas paroles no datubāzes
-        {
-            List<string> hashedPasswordList = new List<string>(); //Ievieš jaunu mainīgo
-
-            using (SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;")) //Konektējas ar datubāzi
-            {
-                sqlite_conn.Open();
-
-                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
-                {
-                    sqlite_cmd.CommandText = "SELECT Parole FROM Lietotaja_dati"; //Izvēlas visus mainīgos no attiecīgās kollonas - parole
-
-                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
-                    {
-                        while (sqlite_datareader.Read())
-                        {
-                            string password = sqlite_datareader["Parole"].ToString(); //Visas paroles ielasa sarakstā
-                            hashedPasswordList.Add(password);
-                        }
-                    }
-                }
-            }
-
-            return hashedPasswordList; //Atgriež sarakstu
-        }
-
-        private string CalculateMD5Hash(string input) //Šifrē paroli ar MD5 hash
+        private string CalculateMD5Hash(string input) // Metode, lai ģenerētu MD5 hash vērtību no ievades teksta
         {
             using (MD5 md5 = MD5.Create())
             {
@@ -101,9 +31,9 @@ namespace Palidzibas_serviss
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < hashBytes.Length; i++)
                 {
-                    sb.Append(hashBytes[i].ToString("x2"));
+                    sb.Append(hashBytes[i].ToString("x2")); // Pārvērš baitu masīvu par heksadecimālu virkni
                 }
-                return sb.ToString();
+                return sb.ToString(); // Atgriež MD5 hash kā heksadecimālu virkni
             }
         }
 
@@ -116,126 +46,112 @@ namespace Palidzibas_serviss
 
         private void pieteikties_Click(object sender, EventArgs e)
         {
-            int datu_id = 0; // Initialize datu_id
+            lietotajs_pierakstities(); // Izsauc lietotāja pieteikšanās funkciju
+        }
 
-            // Retrieve usernames and hashed passwords from the database
-            List<string> usernames = GetListOfUsernamesFromDatabase();
-            List<string> hashedPasswords = GetListOfHashedPasswordsFromDatabase();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pierakstities_parvaldnieks(); // Izsauc pārvaldnieka pierakstīšanās funkciju
+        }
 
-            string searchTextUsername = Lietotajvards.Text; // Get the text from TextBox for username
-            string searchTextPassword = CalculateMD5Hash(Parole.Text); // Hash the password from TextBox
-
-            // Check if the entered username and password are valid
-            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword))
+        private string CalculateMD5HashForPassword(string input)
+        {
+            using (System.Security.Cryptography.MD5 md5 = System.Security.Cryptography.MD5.Create())
             {
-                try
+                byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+                byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+                // Pārvērš baitu masīvu par heksadecimālu virkni
+                System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
                 {
-                    using (SQLiteConnection sqlite_conn = CreateConnection())
-                    {
-                        using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
-                        {
-                            sqlite_cmd.CommandText = @"
-                        SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
-                            sqlite_cmd.Parameters.AddWithValue("@lietotajvards", searchTextUsername);
-
-                            // Execute the query to retrieve the Datu_ID
-                            object result = sqlite_cmd.ExecuteScalar();
-
-                            if (result != null && result != DBNull.Value)
-                            {
-                                datu_id = Convert.ToInt32(result); // Update datu_id with retrieved ID
-
-                                // Pass the datu_id value to Form1
-                                Form1 f1 = new Form1(datu_id);
-                                f1.Show(); // Show Form1
-                                this.Hide(); // Hide current Form3
-                            }
-                            else
-                            {
-                                MessageBox.Show("Error: User not found.");
-                            }
-                        }
-                    }
+                    sb.Append(hashBytes[i].ToString("x2"));
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error: {ex.Message}");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!");
+                return sb.ToString(); // Atgriež MD5 hash kā heksadecimālu virkni
             }
         }
 
-        private List<string> GetListOfUsernamesFromDatabase1() //Funkcija, kas iegūst visus lietotājvārdus no datubāzes
+        private int GetUserIdByUsername(string username)
         {
-            List<string> usernameList = new List<string>(); //Ievieš jaunu mainīgo
+            int userId = 0;
 
-            using (SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;")) //Konektējas ar datubāzi
-            {
-                sqlite_conn.Open(); //Atver datubāzi
-
-                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
-                {
-                    sqlite_cmd.CommandText = "SELECT Parvaldnieka_lietotajvards FROM Parvaldnieks"; //Izvēlas visus mainīgos no attiecīgās kollonas - Lietotajvards
-
-                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
-                    {
-                        while (sqlite_datareader.Read())
-                        {
-                            string username = sqlite_datareader["Parvaldnieka_lietotajvards"].ToString(); //Visus lietotajvardus ielasa sarakstā
-                            usernameList.Add(username);
-                        }
-                    }
-                }
-            }
-
-            return usernameList; //Atgriež sarakstu
-        }
-
-        private List<string> GetListOfHashedPasswordsFromDatabase1() //Funkcija, kas iegūst visas paroles no datubāzes
-        {
-            List<string> hashedPasswordList = new List<string>(); //Ievieš jaunu mainīgo
-
-            using (SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;")) //Konektējas ar datubāzi
+            using (SQLiteConnection sqlite_conn = new SQLiteConnection(_connectionString))
             {
                 sqlite_conn.Open();
 
                 using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                 {
-                    sqlite_cmd.CommandText = "SELECT Parvaldnieka_parole FROM Parvaldnieks"; //Izvēlas visus mainīgos no attiecīgās kollonas - parole
+                    sqlite_cmd.CommandText = @"
+                        SELECT Datu_ID FROM Lietotaja_dati WHERE Lietotajvards = @lietotajvards";
+                    sqlite_cmd.Parameters.AddWithValue("@lietotajvards", username);
 
-                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
+                    // Izpilda vaicājumu, lai iegūtu Datu_ID
+                    object result = sqlite_cmd.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
                     {
-                        while (sqlite_datareader.Read())
-                        {
-                            string password = sqlite_datareader["Parvaldnieka_parole"].ToString(); //Visas paroles ielasa sarakstā
-                            hashedPasswordList.Add(password);
-                        }
+                        userId = Convert.ToInt32(result); // Atjauno userId ar iegūto ID vērtību
                     }
                 }
             }
 
-            return hashedPasswordList; //Atgriež sarakstu
+            return userId;
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void lietotajs_pierakstities()
         {
-            List<string> usernames = GetListOfUsernamesFromDatabase1(); //Izsauc funkciju, kas ielasīja lietotājvārdus sarakstā
-            List<string> hashedPasswords = GetListOfHashedPasswordsFromDatabase1(); //Izsauc funkciju, kas ielasīja paroles sarakstā
+            // Izveido Lietotaja_saraksts klasi, lai iegūtu lietotājvārdus un sakrītošās hash paroles
+            Lietotaja_saraksts userManager = new Lietotaja_saraksts(_connectionString);
 
-            string searchTextUsername = Lietotajvards.Text; //Iegūst tekstu no TextBox
-            string searchTextPassword = CalculateMD5Hash(Parole.Text); // Šifrē paroli un tad to iegūst no TextBox
+            List<string> usernames = userManager.GetListOfUsernamesFromDatabase();
+            List<string> hashedPasswords = userManager.GetListOfHashedPasswordsFromDatabase();
 
-            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword)) //Pārbauda vai lietotājvārds sakrīt ar attiecīgo paroli
+            string searchTextUsername = Lietotajvards.Text; // Iegūst tekstu no lietotājvārda TextBox
+            string searchTextPassword = CalculateMD5HashForPassword(Parole.Text); // Iegūst un dekripto paroli no TextBox
+
+            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword))
             {
-                Form5 f5 = new Form5(); //Ievieš jaunu mainīgo
-                f5.Show(); //Pāiet uz Form4
-                this.Hide();
+                int datu_id = GetUserIdByUsername(searchTextUsername); // Iegūst lietotāja ID pēc lietotājvārda
+
+                if (datu_id > 0)
+                {
+                    // Padod datu_id vērtību Form1
+                    Form1 f1 = new Form1(datu_id);
+                    f1.Show(); // Parāda Form1
+                    this.Hide(); // Paslēpj pašreizējo Form3
+                }
+                else
+                {
+                    MessageBox.Show("Kļūda: lietotāja ID nav atrasts."); //Parāda kļūdas paziņojumu, ja lietotājs nav atrasts
+                }
             }
             else
             {
-                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!"); //Izvada paziņojumu, ja lietotājvārds un/vai parole nesakrīt ar sarakstā esošajiem
+                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!");  // Parāda kļūdas paziņojumu, ja lietotājvārds vai parole ir nepareiza
+            }
+        }
+
+        public void pierakstities_parvaldnieks()
+        {
+            // Izveido Menedzera_saraksts klasi, lai iegūtu pārvaldnieka lietotājvārdus un sakrītošos hash paroles
+            Menedzera_saraksts userManager = new Menedzera_saraksts(_connectionString);
+
+            List<string> usernames = userManager.GetListOfUsernamesFromDatabase();
+            List<string> hashedPasswords = userManager.GetListOfHashedPasswordsFromDatabase();
+
+            string searchTextUsername = Lietotajvards.Text; // Iegūstam tekstu no lietotājvārda TextBox
+            string searchTextPassword = CalculateMD5HashForPassword(Parole.Text); // Iegūst un dekripto paroli no TextBox
+
+            if (usernames.Contains(searchTextUsername) && hashedPasswords.Contains(searchTextPassword))
+            {
+                // Ja lietotājvārds un hash paroles ir derīgi, parāda Form5
+                Form5 f5 = new Form5();
+                f5.Show();
+                this.Hide(); // Paslēpj pašreizējo formu
+            }
+            else
+            {
+                MessageBox.Show("Nepareizs lietotājvārds un/vai parole!"); // Parāda kļūdas paziņojumu, ja lietotājvārds vai parole ir nepareiza
             }
         }
 
@@ -244,6 +160,136 @@ namespace Palidzibas_serviss
             Form6 f6 = new Form6();
             f6.Show();
             this.Hide();
+        }
+    }
+
+    // Klase, kas tiek izmantota, lai iegūtu lietotāju datus no Lietotaja_dati tabulas
+    public class Lietotaja_saraksts
+    {
+        private string _connectionString;
+
+        public Lietotaja_saraksts(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+
+        // Iegūst lietotājvārdus no datubāzes
+        public List<string> GetListOfUsernamesFromDatabase()
+        {
+            List<string> usernameList = new List<string>();
+
+            using (SQLiteConnection sqlite_conn = new SQLiteConnection(_connectionString))
+            {
+                sqlite_conn.Open();
+
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    sqlite_cmd.CommandText = "SELECT Lietotajvards FROM Lietotaja_dati";
+
+                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
+                    {
+                        while (sqlite_datareader.Read())
+                        {
+                            string username = sqlite_datareader["Lietotajvards"].ToString();
+                            usernameList.Add(username);
+                        }
+                    }
+                }
+            }
+
+            return usernameList;
+        }
+
+        // Iegūst hash paroles no datubāzes
+        public List<string> GetListOfHashedPasswordsFromDatabase()
+        {
+            List<string> hashedPasswordList = new List<string>();
+
+            using (SQLiteConnection sqlite_conn = new SQLiteConnection(_connectionString))
+            {
+                sqlite_conn.Open();
+
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    sqlite_cmd.CommandText = "SELECT Parole FROM Lietotaja_dati";
+
+                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
+                    {
+                        while (sqlite_datareader.Read())
+                        {
+                            string password = sqlite_datareader["Parole"].ToString();
+                            hashedPasswordList.Add(password);
+                        }
+                    }
+                }
+            }
+
+            return hashedPasswordList;
+        }
+    }
+
+    // Klase, kas tiek izmantota, lai iegūtu pārvaldnieka datus no Parvaldnieks tabulas
+    public class Menedzera_saraksts
+    {
+        private string _connectionString;
+
+        public Menedzera_saraksts(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+
+        // Iegūst pārvaldnieka lietotājvārdus no datubāzes
+        public List<string> GetListOfUsernamesFromDatabase()
+        {
+            List<string> usernameList = new List<string>();
+
+            using (SQLiteConnection sqlite_conn = new SQLiteConnection(_connectionString))
+            {
+                sqlite_conn.Open();
+
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    sqlite_cmd.CommandText = "SELECT Parvaldnieka_lietotajvards FROM Parvaldnieks";
+
+                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
+                    {
+                        while (sqlite_datareader.Read())
+                        {
+                            string username = sqlite_datareader["Parvaldnieka_lietotajvards"].ToString();
+                            usernameList.Add(username);
+                        }
+                    }
+                }
+            }
+
+            return usernameList;
+        }
+
+        // Iegūst pārvaldnieka paroles no datubāzes
+        public List<string> GetListOfHashedPasswordsFromDatabase()
+        {
+            List<string> hashedPasswordList = new List<string>();
+
+            using (SQLiteConnection sqlite_conn = new SQLiteConnection(_connectionString))
+            {
+                sqlite_conn.Open();
+
+                using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
+                {
+                    sqlite_cmd.CommandText = "SELECT Parvaldnieka_parole FROM Parvaldnieks";
+
+                    using (SQLiteDataReader sqlite_datareader = sqlite_cmd.ExecuteReader())
+                    {
+                        while (sqlite_datareader.Read())
+                        {
+                            string password = sqlite_datareader["Parvaldnieka_parole"].ToString();
+                            hashedPasswordList.Add(password);
+                        }
+                    }
+                }
+            }
+
+            return hashedPasswordList;
         }
     }
 }

@@ -11,16 +11,18 @@ namespace Palidzibas_serviss
 {
     public partial class Form1 : Form
     {
-        private int receivedValue; // Store received value (e.g., datu_id)
+        private int receivedValue; // Glabā saņemto vērtību (piem., datu_id)
 
-        public Form1(int datu_id) // Constructor to receive an initial value
+        public Form1(int datu_id) // Konstruktors, lai saņemtu sākotnējo vērtību
         {
-            InitializeComponent(); // Initialize form components
-            this.receivedValue = datu_id; // Set received value to the class field
+            InitializeComponent(); // Inicializē formu komponentes
+            this.receivedValue = datu_id; // Iestata saņemto vērtību klases laukā
         }
+
         async Task<DateTime> GetCurrentDateTimeFromAPI()
         {
-            string apiUrl = "http://worldtimeapi.org/api/ip"; // Use IP-based API to get current date and time
+            // Asinhroni iegūst pašreizējo datumu un laiku no API
+            string apiUrl = "http://worldtimeapi.org/api/ip"; // API, kas atgriež datumu un laiku atkarībā no IP adreses
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.GetAsync(apiUrl);
@@ -33,13 +35,14 @@ namespace Palidzibas_serviss
                 }
                 else
                 {
-                    throw new Exception("Failed to retrieve date and time from API");
+                    throw new Exception("Neizdevās iegūt datumu un laiku no API");
                 }
             }
         }
 
         private SQLiteConnection CreateConnection()
         {
+            // Izveido un atver savienojumu ar SQLite datubāzi
             SQLiteConnection sqlite_conn = new SQLiteConnection("Data Source=palidzibas_serviss.db; Version=3; New=True; Compress=True;");
             try
             {
@@ -54,6 +57,14 @@ namespace Palidzibas_serviss
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            // Notiek teksta ievade un datu nosūtīšana
+            teksta_ievade();
+            datu_nosutisana();
+        }
+
+        public async void teksta_ievade()
+        {
+            // Iegūst tekstu no ievades lauka
             string teksts = zina.Text;
 
             if (string.IsNullOrEmpty(teksts))
@@ -62,26 +73,26 @@ namespace Palidzibas_serviss
                 return;
             }
 
-            // Insert data into the Zina table
             try
             {
+                // Iegūst pašreizējo datumu un laiku no API
                 DateTime currentDateTime = await GetCurrentDateTimeFromAPI();
 
                 using (SQLiteConnection sqlite_conn = CreateConnection())
                 {
                     using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                     {
-                        // Use parameterized query to avoid SQL injection and ensure correct column-value mapping
+                        // Ievieto datus Zina tabulā
                         sqlite_cmd.CommandText = @"
                     INSERT INTO Zina (Datu_id, Teksts, Datums_laiks)
                     VALUES (@Datu_id, @Teksts, @Datums_laiks)";
 
-                        // Bind parameters with actual values
+                        // Piesaista parametrus ar faktiskajām vērtībām
                         sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue);
                         sqlite_cmd.Parameters.AddWithValue("@Teksts", teksts);
                         sqlite_cmd.Parameters.AddWithValue("@Datums_laiks", currentDateTime);
 
-                        // Execute the query
+                        // Izpilda vaicājumu
                         sqlite_cmd.ExecuteNonQuery();
                     }
                 }
@@ -90,9 +101,6 @@ namespace Palidzibas_serviss
             {
                 MessageBox.Show($"Kļūda datu ievietošanā: {ex.Message}");
             }
-
-            // Perform data submission logic
-            datu_nosutisana();
         }
 
         private void datu_nosutisana()
@@ -100,10 +108,10 @@ namespace Palidzibas_serviss
             var input = new ModelInput();
             input.Col0 = zina.Text;
 
-            // Perform prediction using the machine learning model
+            // Veic prognozi, izmantojot mašīnmācīšanās modeli
             ModelOutput prediction = ConsumeModel.Predict(input);
 
-            // Determine the predicted category based on the max probability
+            // Noteik prognozēto kategoriju, balstoties uz maksimālo varbūtību
             int maxIndex = 0;
             float maxProbability = prediction.Score[0];
 
@@ -112,15 +120,16 @@ namespace Palidzibas_serviss
                 if (prediction.Score[i] > maxProbability)
                 {
                     maxProbability = prediction.Score[i];
-                    maxIndex = i + 1; // Increment by 1 because category indices start from 1
+                    maxIndex = i + 1; // Palielina par 1, jo kategorijas indeksi sākas no 1
                 }
             }
 
-            // Prepare the message for the predicted category
+            // Sagatavo ziņojumu par prognozēto kategoriju
             string predictedCategory = $"Kategorija {maxIndex}";
 
-           string nozare = ""; // Declare `nozare` at a higher scope
+            string nozare = ""; // Deklarē `nozare` augstākā līmenī
 
+            // Izvēlas atbilstošo nozari atkarībā no prognozētās kategorijas
             if (maxIndex == 0)
             {
                 nozare = "IT";
@@ -158,28 +167,29 @@ namespace Palidzibas_serviss
             {
                 using (SQLiteCommand sqlite_cmd = sqlite_conn.CreateCommand())
                 {
+                    // Iegūst Zina_ID, lai to izmantotu Nozare tabulas ierakstā
                     sqlite_cmd.CommandText = @"
                     SELECT Zina_ID FROM Zina WHERE Teksts = @Teksts";
                     sqlite_cmd.Parameters.AddWithValue("@Teksts", inputzina);
 
-                    // Execute the query to retrieve the Zina_ID
+                    // Izpilda vaicājumu, lai iegūtu Zina_ID
                     object result = sqlite_cmd.ExecuteScalar();
 
                     if (result != null && result != DBNull.Value)
                     {
                         int zina_id = Convert.ToInt32(result);
 
-                        // Now insert into Nozare table
+                        // Ievieto datus Nozare tabulā
                         sqlite_cmd.CommandText = @"
                     INSERT INTO Nozare (nozare, Datu_id, Zina_id)
                     VALUES (@Nozare, @Datu_id, @Zina_id)";
 
-                        // Bind parameters with actual values
+                        // Piesaista parametrus ar faktiskajām vērtībām
                         sqlite_cmd.Parameters.AddWithValue("@Nozare", nozare);
                         sqlite_cmd.Parameters.AddWithValue("@Datu_id", receivedValue);
                         sqlite_cmd.Parameters.AddWithValue("@Zina_id", zina_id);
 
-                        // Execute the insertion query
+                        // Izpilda ievietošanas vaicājumu
                         sqlite_cmd.ExecuteNonQuery();
                     }
                 }
@@ -188,11 +198,13 @@ namespace Palidzibas_serviss
 
         private string CalculateMD5Hash(string input)
         {
+            // Aprēķina MD5 kodus no ievades
             using (MD5 md5 = MD5.Create())
             {
                 byte[] inputBytes = Encoding.UTF8.GetBytes(input);
                 byte[] hashBytes = md5.ComputeHash(inputBytes);
 
+                // Pārvērš baitu masīvu par heksadecimālu virkni
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < hashBytes.Length; i++)
                 {
@@ -204,9 +216,10 @@ namespace Palidzibas_serviss
 
         private void tabula_Click(object sender, EventArgs e)
         {
+            // Pāreja uz Form4, padodot saņemto vērtību
             Form4 f4 = new Form4(receivedValue);
-            f4.Show(); // Show Form1
-            this.Hide();
+            f4.Show(); // Parāda Form4
+            this.Hide(); // Paslēpj pašreizējo formu
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -216,9 +229,10 @@ namespace Palidzibas_serviss
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            // Pāreja uz Form3
             Form3 f3 = new Form3();
             f3.Show();
-            this.Hide();
+            this.Hide(); // Paslēpj pašreizējo formu
         }
     }
 }

@@ -87,7 +87,6 @@ namespace Palidzibas_serviss
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ziņu apskate";
-            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.zinu_tabula)).EndInit();
             this.ResumeLayout(false);
 

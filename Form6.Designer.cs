@@ -45,7 +45,7 @@
             this.Lietotajvards.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Lietotajvards.ForeColor = System.Drawing.Color.Black;
             this.Lietotajvards.Location = new System.Drawing.Point(309, 52);
-            this.Lietotajvards.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Lietotajvards.Margin = new System.Windows.Forms.Padding(4);
             this.Lietotajvards.Name = "Lietotajvards";
             this.Lietotajvards.Size = new System.Drawing.Size(132, 30);
             this.Lietotajvards.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.jauna_parole1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jauna_parole1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.jauna_parole1.Location = new System.Drawing.Point(309, 105);
-            this.jauna_parole1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.jauna_parole1.Margin = new System.Windows.Forms.Padding(4);
             this.jauna_parole1.Name = "jauna_parole1";
             this.jauna_parole1.Size = new System.Drawing.Size(132, 30);
             this.jauna_parole1.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.jauna_parole2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jauna_parole2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.jauna_parole2.Location = new System.Drawing.Point(309, 161);
-            this.jauna_parole2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.jauna_parole2.Margin = new System.Windows.Forms.Padding(4);
             this.jauna_parole2.Name = "jauna_parole2";
             this.jauna_parole2.Size = new System.Drawing.Size(132, 30);
             this.jauna_parole2.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.paroles_maina.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.paroles_maina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(188)))), ((int)(((byte)(98)))));
             this.paroles_maina.Location = new System.Drawing.Point(155, 219);
-            this.paroles_maina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.paroles_maina.Margin = new System.Windows.Forms.Padding(4);
             this.paroles_maina.Name = "paroles_maina";
             this.paroles_maina.Size = new System.Drawing.Size(191, 54);
             this.paroles_maina.TabIndex = 3;
@@ -151,10 +151,11 @@
             this.Controls.Add(this.jauna_parole2);
             this.Controls.Add(this.jauna_parole1);
             this.Controls.Add(this.Lietotajvards);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paroles maiņa";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
