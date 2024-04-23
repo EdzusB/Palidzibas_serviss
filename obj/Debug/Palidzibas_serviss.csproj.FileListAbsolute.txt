@@ -134,27 +134,8 @@ Z:\Palidzibas_serviss\bin\Debug\System.ValueTuple.xml
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.csproj.CopyComplete
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.exe
 Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.pdb
-Z:\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x86.dll
-Z:\Palidzibas_serviss\bin\Debug\grpc_csharp_ext.x64.dll
-Z:\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.so
-Z:\Palidzibas_serviss\bin\Debug\libgrpc_csharp_ext.x64.dylib
-Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.dll
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.dll
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.dll
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.dll
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 Z:\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.dll
-Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.pdb
-Z:\Palidzibas_serviss\bin\Debug\Google.Protobuf.xml
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.pdb
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.xml
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.pdb
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Core.Api.xml
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.pdb
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Client.xml
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.pdb
-Z:\Palidzibas_serviss\bin\Debug\Grpc.Net.Common.xml
 Z:\Palidzibas_serviss\bin\Debug\System.CodeDom.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 Z:\Palidzibas_serviss\bin\Debug\System.Net.Http.WinHttpHandler.xml
@@ -361,3 +342,8 @@ C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.dll
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 C:\Users\Lietotajs\Documents\Palidzibas_serviss (2)\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.Http.xml
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+Z:\Palidzibas_serviss\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form4.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form5.resources
+Z:\Palidzibas_serviss\obj\Debug\Palidzibas_serviss.Form6.resources

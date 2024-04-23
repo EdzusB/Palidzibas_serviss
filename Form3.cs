@@ -231,11 +231,19 @@ namespace Palidzibas_serviss
             {
                 Form5 f5 = new Form5(); //Ievieš jaunu mainīgo
                 f5.Show(); //Pāiet uz Form4
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Nepareizs lietotājvārds un/vai parole!"); //Izvada paziņojumu, ja lietotājvārds un/vai parole nesakrīt ar sarakstā esošajiem
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.Show();
+            this.Hide();
         }
     }
 }
